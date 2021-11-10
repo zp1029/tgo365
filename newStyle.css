@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+.activity_4col>div{vertical-align: top;}
+.product> .activity_4col> div{
+	line-height: 1rem;}
+.product>.activity_4col>div>p{height: fit-content!important;}
+.name{
+    font-size: 1rem!important; 
+    white-space: normal !important; 
+    word-break: keep-all!important; 
+	color: #444;
+	height:auto!important;
+}
+.points{
+	color:#333 !important;
+	font-size:1.4rem!important;
+}
+.points span{
+	color: #666;
+	font-size:0.825rem;
+	padding-left: 3px;
+}
+.points:before{
+	content:'';
+	background-image:  url("tgopoint.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+    background-size:18px 18px;
+	width: 22px;
+	height: 20px;
+    display:inline-block;
+}
+.money:before{
+	content:'';
+	background-image:  url("point_money.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+    background-size:36px 18px;
+	width: 40px;
+	height: 20px;
+    display:inline-block;
+}
+span.plus {
+    color: #666 !important;
+    font-size: 1.3rem !important;
+    padding: 0px 5px; 
+}
+.oldPoint{padding-left: 10px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;}
+/*好咖相伴*/
+img.red_green_block{
+	width:108px;height: 28px;padding-right: 3px;
+    margin-top: -2px;
+}
+/*活動標籤*/
+.promo_block{position: absolute;margin-top: -10px;display: contents;}
+.promo_block>span{
+	width:fit-content;padding: 5px;color:#ee9920;border:1px solid #f2b672;margin:0px 4px 4px 0px;
+    display: inline-block;width: 33%;min-width: 96px;
+}
+@media screen and (max-width: 960px) {
+	.promo_block{width: calc(25% - 20px);}
+}
+@media screen and (max-width: 801px) {
+    .promo_block{width: calc(50% - 20px);}
+	.name{font-size: 0.9rem!important;line-height: 1.2rem;}
+	.promo_block>span{width: fit-content;}
+}
+
+@media screen and (max-width: 420px) {
+	.product>.activity_4col>div{padding-bottom: 20px!important;}
+	.name{font-size: 0.875rem !important;word-break:normal !important;}
+	.points{font-size: 1.2rem !important;}
+/*活動標籤*/
+.promo_block>span{margin-top: 4px;margin-bottom: 0px;}
+img.red_green_block{margin-top: -10px;}
+.points:before {background-size: 15px 15px;width: 18px;}
+.money:before {background-size: 30px 15px;width: 32px;}	
+	img.red_green_block {width: 90px;height: 23px;}
+	.promo_block>span{font-size: 0.7rem;padding: 3px 5px;min-width: fit-content;display: block;}
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+.prod_num{
+    color: #666;font-weight: 300;font-size:0.9rem;margin-bottom: 10px;
+}
+h2.prod_name {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    font-weight: 400;
+}
+span.points.detail, span.money.detail{letter-spacing: 2px;	
+	font-size:1.5rem;
+	padding-left: 3px;
+	width: 100%;
+	display: block;margin-bottom:10px;    font-weight: 500;transform: scale(1.1);margin-left: 25px;
+}
+
+.article>.promo_block>span{width: fit-content;padding:1px 5px 0px 5px;font-size: 0.8rem;min-width:min-content;}
+
+.article img.red_green_block{width: 100px;height: 26px;margin-top:-2px;}
+
+.detail>span.ng-star-inserted{font-size: 1rem;
+}
+span.oldPoint{font-size: 0.825rem;letter-spacing: 0px;font-weight: 300;}
+.desc_text{width:49%;height: 60px; padding-top: 20px; border-top: 1px solid #edecec; float: left;margin-top: 20px;}
+.desc_text>span{padding: 3px; border-bottom: 1px solid #999;font-weight: 500;}
+.product_item>div{word-break: keep-all;}
+.pasteContent{text-align: left;font-size: 0.9rem;}
+.product-btn{width: 49%}
+
+@media screen and (max-width: 801px) {
+	.article img.red_green_block{margin-top: 0px;}
+	.desc_text{width: 90%;font-size: 1.1rem;}
+	.product-desc>div{font-size: 1rem;float: left;padding: 10px;}
+}
+@media screen and (max-width: 420px) {
+	span.oldPoint{min-width: 140px;}
+	span.points.detail, span.money.detail{margin-left: 10px;line-height: 20px;}
+	.article>.promo_block>span{display:inline-block;}
+}
