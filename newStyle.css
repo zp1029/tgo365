@@ -3,7 +3,9 @@
 .activity_4col>div{vertical-align: top;}
 .product> .activity_4col> div{
 	line-height: 1rem;}
-.product>.activity_4col>div>p{height: fit-content!important;}
+.product>.activity_4col>div>p{height: fit-content!important;    margin-bottom: 10px;
+}
+
 .name{
     font-size: 1rem!important; 
     white-space: normal !important; 
@@ -43,7 +45,7 @@
 span.plus {
     color: #666 !important;
     font-size: 1.3rem !important;
-    padding: 0px 5px; 
+    padding: 0px 2px; 
 }
 .oldPoint{padding-left: 10px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;}
 /*好咖相伴*/
