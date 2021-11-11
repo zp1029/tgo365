@@ -74,9 +74,7 @@ img.red_green_block{
 	.name{font-size: 0.875rem !important;word-break:normal !important;}
 	.points{font-size: 1.2rem !important;}
 /*活動標籤*/
-        .promo_block{}
-		.promo_block>span{font-size:8px; margin: 0px 2px 2px 0px;height: 23px;width: 83px;text-align: center;padding: auto;}
-img.red_green_block{}
+		.promo_block>span{font-size:8px; margin: 0px 2px 2px 0px;text-align: center;padding: auto;}
 .points:before {background-size: 15px 15px;width: 18px;}
 .money:before {background-size: 30px 15px;width: 32px;}	
 	img.red_green_block {width: 83px;height: 25px;}
