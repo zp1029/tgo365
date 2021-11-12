@@ -3,7 +3,7 @@
 .activity_4col>div{vertical-align: top;}
 /*.product> .activity_4col> div{
 	line-height: 1rem;}*/
-.product>.activity_4col>div>p{height: fit-content!important;    margin-bottom: 10px;
+.product>.activity_4col>div>p{height: fit-content!important;    margin-bottom: 8px;line-height: 1rem;
 }
 
 .name{
@@ -50,14 +50,14 @@ span.plus {
 .oldPoint{padding-left: 10px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;}
 /*好咖相伴*/
 img.red_green_block{
-	width:100px;height: 28px;padding-right: 3px;
-   padding-bottom: 2px;
+	width:89px;height: 26px;margin-right: 4px;
+   margin-bottom: 2px;
 }
 /*活動標籤*/
-.promo_block{position: absolute;margin-top: -10px;display: contents;}
+.promo_block{position: absolute;display: contents;font-size: 0.8rem;}
 .promo_block>span{
-	width:fit-content;padding: 1px 4px;color:#ee9920;border:1px solid #f2b672;margin:0px 4px 4px 0px;
-    display: inline-block;font-size: 0.8rem;
+	width:fit-content;height: 26px; padding: 1px 5px;color:#ee9920;border:1px solid #f2b672;margin:0px 4px 4px 0px;
+    display: inline-block;
 }
 @media screen and (max-width: 960px) {
 	.promo_block{width: calc(25% - 20px);}
@@ -66,7 +66,8 @@ img.red_green_block{
     .promo_block{width: calc(50% - 20px);}
 	.name{font-size: 0.9rem!important;line-height: 1.2rem;}
 	.promo_block>span{width: fit-content;font-size: 0.825rem;padding: 0px 4px;}
-	
+	.points{line-height: 1rem;}
+	 
 }
 
 @media screen and (max-width: 420px) {
@@ -74,10 +75,11 @@ img.red_green_block{
 	.name{font-size: 0.875rem !important;word-break:normal !important;}
 	.points{font-size: 1.2rem !important;}
 /*活動標籤*/
-		.promo_block>span{font-size:8px; margin: 0px 2px 2px 0px;text-align: center;}
-.points:before {background-size: 15px 15px;width: 18px;}
-.money:before {background-size: 30px 15px;width: 32px;}	
-	img.red_green_block {width: 83px;height: 25px;}
-	/*.promo_block>span{font-size: 0.7rem;padding: 3px 5px;min-width: fit-content;display: block;}*/
+	.promo_block>span{margin: 0px 2px 2px 0px;text-align: center;font-size: 0.7rem;}
+	.points:before {background-size: 15px 15px;width: 18px;}
+	.money:before {background-size: 30px 15px;width: 32px;}	
+img.red_green_block {
+    
+}
 
 }
