@@ -48,9 +48,9 @@ span.oldPoint{font-size: 0.825rem;letter-spacing: 0px;font-weight: 300;}
 @media screen and (max-width: 801px) {
 	.article img.red_green_block{margin-bottom:0px;margin-right: 2px;}
 	.desc_text{width: 90%;font-size: 1.1rem;}
-	.product-desc>div{font-size: 1rem;float: left;padding: 10px;}
+	.product-desc>div{font-size: 1rem;float: left;padding: 10px;width: 100%;}
 	.Product_notice h3{font-size: 1.2rem !important;}
-	.article>.promo_block>span{}
+	.article>.promo_block>span{font-size: small;}
 }
 @media screen and (max-width: 420px) {
 	span.oldPoint{min-width: 140px;}
