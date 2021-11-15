@@ -16,7 +16,7 @@ span.points.detail, span.money.detail{letter-spacing: 2px;
 }
 
 .article>.promo_block>span{width: fit-content;font-size: 0.8rem;min-width:min-content;height: 26px;}
-img.red_green_block{margin-bottom:1px;}
+img.red_green_block{margin-bottom:1px;width: 89px !important;height: 26px !important;}
 
 
 .detail>span.ng-star-inserted{font-size: 1rem;
@@ -49,12 +49,13 @@ span.oldPoint{font-size: 0.825rem;letter-spacing: 0px;font-weight: 300;}
 	.desc_text{width: 90%;font-size: 1.1rem;}
 	.product-desc>div{font-size: 1rem;float: left;padding: 10px;}
 	.Product_notice h3{font-size: 1.2rem !important;}
-	.article>.promo_block>span{font-size: 0.8rem;padding-top: 1px; height: 26px;
+	.article>.promo_block>span{font-size: 0.8rem;padding-top: 1px; line-height: 25px;
 }
 }
 @media screen and (max-width: 420px) {
 	span.oldPoint{min-width: 140px;}
 	span.points.detail, span.money.detail{margin-left: 10px;line-height: 20px;}
 	.article>.promo_block>span{display:inline-block;}
+	
 	
 }
