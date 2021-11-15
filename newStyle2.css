@@ -15,7 +15,7 @@ span.points.detail, span.money.detail{letter-spacing: 2px;
 	display: block;margin-bottom:8px;    font-weight: 500;transform: scale(1.1);margin-left: 25px;
 }
 
-.article>.promo_block>span{width: fit-content;font-size: 0.5rem;min-width:min-content;height: auto;line-height: 1.4rem;
+.article>.promo_block>span{width: fit-content;/*font-size: 0.5rem;*/min-width:min-content;height: auto;line-height: 1.4rem;
     padding: 0px 5px;}
 img.red_green_block{margin-bottom:1px;width: 80px;height: auto;}
 
