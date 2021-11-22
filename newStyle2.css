@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 .prod_num{
-    color: #666;font-weight: 300;font-size:0.9rem;margin-bottom: 10px;
+    color: #666;font-weight: 300;font-size:0.938rem;margin-bottom: 10px;
 }
 h2.prod_name {
     font-size: 1rem;
@@ -9,7 +9,7 @@ h2.prod_name {
     font-weight: 400;
 }
 span.points.detail, span.money.detail{letter-spacing: 2px;	
-	font-size:1.4rem;
+	font-size:1.513rem;
 	padding-left: 3px;
 	width: 100%;
 	display: block;margin-bottom:8px;    font-weight: 500;transform: scale(1.1);margin-left: 25px;
@@ -20,9 +20,8 @@ span.points.detail, span.money.detail{letter-spacing: 2px;
 img.red_green_block{margin-bottom:1px;width: 80px;height: auto;}
 
 
-.detail>span.ng-star-inserted{font-size: 1rem;
-}
-span.oldPoint{font-size: 0.825rem;letter-spacing: 0px;font-weight: 300;}
+.detail>span.ng-star-inserted{font-size: 0.875rem;}
+span.oldPoint{font-size: 0.875rem;letter-spacing: 0px;font-weight: 300;}
 .desc_text{width:49%;height: 60px; padding-top: 20px; border-top: 1px solid #edecec; float: left;margin-top: 20px;}
 .desc_text>span{padding: 3px; border-bottom: 1px solid #999;font-weight: 500;}
 .product_item>div{word-break: keep-all;}
