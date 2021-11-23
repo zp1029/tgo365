@@ -44,7 +44,7 @@
 }
 span.plus {
     color: #666 !important;
-    font-size: 1.3rem !important;
+    font-size: 1.125rem;
     padding: 0px 2px; 
 }
 .oldPoint{padding-left: 10px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;}
@@ -65,7 +65,7 @@ img.red_green_block{
 @media screen and (max-width: 801px) {
     .promo_block{width: calc(50% - 20px);}
 	.name{font-size: 0.9rem!important;line-height: 1.2rem;}
-	.promo_block>span{width: fit-content;padding: 0px 5px;font-size:smaller;}
+	.promo_block>span{width: fit-content;padding: 0px 5px;font-size:0.75rem;}
 	.points{line-height: 1rem;}
 	 img.red_green_block {
     	width:66px;height: 21px;margin-right: 4px;
