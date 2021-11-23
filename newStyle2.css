@@ -8,18 +8,18 @@ h2.prod_name {
     color: #5a5a5a;
     font-weight: 400;
 }
-span.points.detail, span.money.detail{letter-spacing: 2px;	
+span.points.detail, span.money.detail{letter-spacing: 1px;	
 	font-size:1.513rem;
 	padding-left: 3px;
 	width: 100%;
-	display: block;margin-bottom:8px;    font-weight: 500;transform: scale(1.1);margin-left: 25px;
+	display: block;margin-bottom:8px;    font-weight: 400;transform: scale(1.1);margin-left: 25px;
 }
 
-.article>.promo_block>span{font-size: 0.75rem;height: 25px;}
+.article>.promo_block>span{font-size: 0.813rem;}
 .promo_block>img{margin-bottom: 0px;}
 
 
-.detail>span.ng-star-inserted{font-size: 0.875rem;}
+.detail>span.ng-star-inserted{font-size: 0.875rem;margin: 0px 3px;}
 span.oldPoint{font-size: 0.875rem;letter-spacing: 0px;font-weight: 300;}
 .desc_text{width:49%;height: 60px; padding-top: 20px; border-top: 1px solid #edecec; float: left;margin-top: 20px;}
 .desc_text>span{padding: 3px; border-bottom: 1px solid #999;font-weight: 500;}
@@ -44,16 +44,16 @@ span.oldPoint{font-size: 0.875rem;letter-spacing: 0px;font-weight: 300;}
     background-color: #DD5000;
 }
 @media screen and (max-width: 801px) {
-	.article img.red_green_block{}
+	.promo_block>img{margin:2px;}
 	.desc_text{width: 90%;font-size: 1.1rem;}
 	.product-desc>div{font-size: 1rem;padding: 10px;}
 	.Product_notice h3{font-size: 1.2rem !important;}
-	.article>.promo_block>span{}
+	.article>.promo_block>span{margin:2px;}
 }
 @media screen and (max-width: 420px) {
 	span.oldPoint{min-width: 140px;}
 	span.points.detail, span.money.detail{margin-left: 10px;line-height: 20px;margin-top: 15px;}
-	.article>.promo_block>span{display:inline-block;line-height: 1.3rem;padding-top: 1px;}
-	
+		.article>.promo_block>span{padding: 2px 5px;}
+	.promo_block>img{height: 25px;}
 	
 }
