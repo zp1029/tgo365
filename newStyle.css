@@ -15,7 +15,7 @@
 }
 .points{
 	color:#333 !important;
-	font-size:1.4rem!important;
+	font-size:1.375rem!important;
 }
 .points span{
 	color: #666;
@@ -72,8 +72,8 @@ span.plus {
 @media screen and (max-width: 420px) {
 	.product>.activity_4col>div{padding-bottom: 20px!important;padding:unset!important;}
 	.name{font-size: 0.875rem !important;word-break:normal !important;}
-	.points{font-size: 1.375rem !important;}
-	.points>span{font-size: 0.813rem;}
+	.points{font-size: 1.25rem !important;}
+	.points>span{font-size: 0.875rem;}
 /*活動標籤*/
 	.promo_block>span{margin: 0px 2px 2px 0px;text-align: center;height: auto;line-height: 1.2rem;font-size: 0.75rem;}
 	.points:before {background-size: 15px 15px;width: 18px;}
