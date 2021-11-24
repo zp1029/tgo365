@@ -16,7 +16,7 @@ span.points.detail, span.money.detail{letter-spacing: 1px;
 }
 
 .article>.promo_block>span{font-size: 0.813rem;}
-.promo_block>img{margin-bottom: 0px;}
+.promo_block>img{margin-bottom: 1px;}
 
 
 .detail>span.ng-star-inserted{font-size: 0.875rem;margin: 0px 3px;}
