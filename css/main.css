@@ -1,0 +1,973 @@
+@charset "UTF-8";
+/* CSS Document */
+
+   /*基本架構定義*/
+	*{margin:0px;padding:0px;box-sizing: border-box;}
+
+	html,body{font-size:1em;line-height:1.8;font-family:'Oswald',Microsoft JhengHei;width:100%;height:100%;background:#efefef;color:#5c5c5c;}	
+
+    section{overflow:auto;width:100%;}
+
+	h1{font-size:2.4em;line-height:1.3;font-weight:500;}
+
+	h2{font-size:1.4em;line-height:1.5;font-weight:300;}
+
+	h3{font-size:1.2em;line-height:1.3;font-weight:100;}
+  
+	a{color:inherit;text-decoration:none;}
+
+	ol,ul{list-style-type:none;}
+
+    form{margin:15px 0px;}
+
+    .mobile_txt{display:none;color:#333;font-size:1em;text-align:center;margin-bottom:5px;color:#Db5009;transition:0.25s ease;font-weight:500;}
+	
+   
+     /*footer 樣式*/
+    footer{text-align: center;background:#333; border-top: 1px solid #d2d2d2;color:#a6a6a6;padding: 10px;}
+
+    footer>a{transition:0.5s;font-size:1em;color:#Db5009;}
+
+    footer>a:hover{color:#333;text-decoration: none;}
+
+    footer>div{width:600px;margin:10px auto;}
+    
+    footer>div>a{color:#999;font-size:1.8em;margin-left:25px;}
+    
+    footer>div>a:hover{color:#db5009;}
+    
+    footer>div>fa{font-size:1.5em;}
+
+    /*--------------------------------------------------------------------------------------------------------*/
+	/*loading_page*/
+
+	.loading_page{width:100%;height:100%;z-index :2000;top:0;left:0;position:fixed;display:nones;overflow:hidden;}
+
+     .loading_page>span{display:block;width:100%;height:100%;position:relative;}
+
+     .loading_page>span:after{content:"";display:block;width:50%;height:100%;background:#f5f5f5;position:absolute;}
+
+     .loading_page>span:before{content:"";display:block;width:50%;height:100%;background:#fff;position:absolute;left:50%;}
+           
+    .loading_page>div{width:60px;height:60px;position:absolute;border:1px solid rgba(0,0,0,0);top:50%;left:50%;margin-top:-30px;margin-left:-30px;text-align:center;}
+
+     .loading_page>div>img{height:100%;opacity:0.7;animation:ror 2s infinite ease-out;}
+
+
+
+@keyframes ror{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+}
+
+
+     
+    /*--------------------------------------------------------------------------------------------------------*/
+
+	/*modal compent and pop windnow*/
+
+
+	.modal_pop{width:600px;position:fixed;background:#fff;top:10%;left:50%;margin-left:-300px;z-index:1000;display:none;
+border-bottom-left-radius:15px;border-bottom-right-radius:15px;box-shadow:0 0 15px rgba(0,0,0,0.6);overflow:auto;}
+
+
+    .modal_head{width:100%;background:#db5009;color:#fff;font-size:1.2em;position:relative;height:60px;overflow:hidden;font-weight:bold;}
+
+    .modal_tit{font-size:1em;color:#fff;padding-left:15px;line-height:60px;}
+
+    .modal_cls_btn{position:absolute;right:0px;top:0px;width:60px;height:60px;cursor:pointer;background:#333;text-align:center;line-height:50px;font-size:2em;font-weight:bold;}
+
+    .modal_cls_btn:hover{background:#000;color:#db5009;transition:0.25s ease;}    
+
+    .modal_content{padding:10px;text-align:center;font-size:1em;color:#333;} 
+    
+
+    .modal_footer{padding:15px;text-align:center;}
+
+
+    .modal_footer p{padding:10px 20px;margin:15px;background:#333;border-radius:5px;color:#fff;cursor:pointer;display:inline;transition:0.25s ease;}
+
+    .modal_footer p:hover{background:#db5009;color:#fff;transition:0.25s ease;}
+
+
+
+    
+   
+    .mask{width:100%;height:100%;background:rgba(0,0,0,0.7);position:fixed;z-index:999;display:none}
+
+     /*--------------------------------------------------------------------------------------------------------*/
+
+    
+    /*header 設計 包含logo+menu  手機樣式*/
+	header{width:100%;height:60px;position:relative;background:rgba(255,255,255,1);border-bottom:1px solid #d2d2d2;overflow:hidden;margin-bottom:60px;}
+	
+	header ol {list-style-type:none;overflow:auto;height:60px;position:absolute;top:0px;right:0px;width:80%;transition:0.25s linear;}
+
+    header ul {list-style-type:none;overflow:auto;height:60px;position:absolute;top:0px;right:0px;transition:0.25s linear;}
+	
+	header ul li{float:left;line-height:60px;padding:0 16px;color:#333;font-size:1em;letter-spacing:1px;transition:0.25s linear;font-weight:600;}
+	
+    header ul li a:hover{color:#db5009;transition:0.25s ease-out;text-decoration: none;} 
+
+    .buy_btn{background:#db5009;color:#Fff;transition:0.25s ease}
+
+     .buy_btn:hover{background:#f2f2f2;color:#db5009;transition:0.25s ease;}
+
+    
+    .home_btn,.back_btn{background:#333333;color:#Fff;}
+
+	.logo{width:100px;height:65px;position:absolute;top:-5px;left:0px;margin-top:0%;}
+
+	.logo img{height:70%;margin-top:10px;}
+
+	.mobile_btn{top:0;right:0px;width:60px;height:60px;background:#db5009;position:absolute;z-index:100;color:#fff;text-align:center;display:none;cursor:pointer;transition:0.25s;}	
+
+    .mobile_btn:hover{background:#333;transition:0.25s ease-out;} 
+    
+    .mobile_btn:hover span:after{transition:0.25s ease-out;transform:scale(0.8,0.8);}
+
+	.mobile_btn span:after{content:"☰";font-size:2.4em;display:block;transition:0.25s ease-out;line-height:60px;margin-top:-5px;}
+
+	.m_menu{background:#e9e9e9;width:100%;height:100%;position: fixed;top:0;left:0;z-index:1000;display:none;color:#efefef;text-align:center;overflow-y:auto;}
+    
+    .m_menu li{transition:0.25s ease-in;}
+	
+    .m_menu ol li a{border-bottom:1px solid #d2d2d2;padding:20px 0px;letter-spacing:1px;font-size:1.6em;transition:0.25s linear;display:block;border-left:2px solid rgba(255,255,255,0.8);text-decoration: none;color:#333;font-weight:100;}
+
+     .m_menu ol li a:hover{color:#fff;background:#db5009;transition:0.25s ease;}
+
+    
+	.cross_btn{height:60px;border-left:0px;background:#999;color:#fff;cursor:pointer;width:100%;text-align: right;padding-right:10px;border-bottom:1px solid rgba(255,255,255,0.1);box-shadow:0 0 15px rgba(0,0,0,0.8)}
+    
+    .cross_btn:hover span:after{transform:rotate(90deg);transition:0.25s ease-out;margin-top:-5px;}
+
+    .cross_btn span:after{content:"✕";font-size:2.6em;transition:0.25s ease-out;display:inline-block;margin-top:-10px;margin-right:5px;font-weight:bold;}
+
+    .addmenber_btn{position:absolute;width:100px;text-align:center;top:0px;right:0px;height:100%;line-height:60px;transition:0.25s linear;font-size:1em;font-weight:bold;}
+
+.addmenber_btn a{text-decoration: none;color:#fff;display:block;width:100%;height:100%;background:#Db5009;cursor:pointer;}
+
+
+  .login_btn{position:absolute;width:100px;text-align:center;color:#fff;background:#c9c9c9;top:0px;right:100px;height:100%;line-height:60px;transition:0.25s linear;font-size:1em;font-weight:bold;cursor:pointer;}
+
+    .addmenber_btn:hover{background:#333;transition:0.25s linear;}
+
+.login_btn a{text-decoration:none;color:#fff;display:block;width:100%;}
+
+  .login_btn:hover{background:#333;transition:0.25s linear;color:#fff;}
+
+    /*--------------------------------------------------------------------------------------------------------*/
+
+	/*login_page 登入頁面的分頁清單*/
+	.login_page{width:100%;border:1px solid #d2d2d2;overflow:auto;}
+	
+    .login_page ul{width:100%;}
+
+	.login_page ul li{float:left;text-align:center;width:33.333%;border-bottom:1px solid #d2d2d2;border-right:1px solid  #d2d2d2;padding:10px 0px;cursor:pointer;transition:0.25s ease-in;font-weight: bold;}
+  
+     .login_page ul li:hover{background:#333;color:#fff;transition:0.25s ease-in;}
+
+     .login_page ul li:last-child{border-right:0px solid #d2d2d2;}
+
+	.page_content{padding:15px;clear:both;background:#efefef;}
+
+	.form_comment{width:85%;margin:5px auto;}
+	
+     /*--------------------------------------------------------------------------------------------------------*/
+     
+    /* banner */
+    .banner{width:1280px;height:378px;background:#fff;margin:20px auto;border:1px solid rgba(0,0,0,0.2);}
+
+    .banner img{width:100%;display: block;}
+
+    .mbanner{width:100%;margin:0px 0px 20px 0px;border:1px solid rgba(0,0,0,0.2);display:none;}
+    .mbanner img{width:100%;display:block;}
+
+    #mobile_banner{display:none;}
+
+ 
+    .carousel-inner img{width:100%;}
+
+
+    /*--------------------------------------------------------------------------------------------------------*/
+     /*container*/
+
+    .con{width:1280px;margin:40px auto;padding:15px;background:#fff;border:1px solid #d2d2d2;}
+
+    .con_sub{width:1280px;margin:0px auto;padding:0px;white-space: nowrap;-webkit-overflow-scrolling:touch;}
+
+
+    .con .material-icons{font-size: 19px;
+    padding-left: 5px;
+    vertical-align: middle;
+    margin-top: -4px;
+	display:none;
+     }
+    
+
+    .con_banner{width:1280px;margin:10px auto;padding:0px;background:#fff;border:1px solid #d2d2d2;}
+
+    .con_banner img{display:block}
+
+    .con_full{width:100%;}
+
+    .con_s96{width:96%;margin:10px auto;padding:15px;}
+
+    /*左右版型*/
+   .left_right_layout{width:100%;overflow:auto;}
+
+   .left_right_layout section {clear:both;float:none;position:relative;margin:15px 0px;background:#efefef}
+    
+   .left_right_layout section div{width:50%;transition:0.25s;}
+
+   .left_right_layout section div img{width:100%;display:block;}
+
+   .left_right_layout section:nth-child(odd) div{float:left}
+
+   .left_right_layout section:nth-child(even) div{float:right}
+
+   .left_right_layout section article{width:50%;position:absolute;left:50%;top:50%;transform:translateY(-50%);padding:15px;transition:0.25s;}
+
+   .left_right_layout section:nth-child(odd) article{float:right;}
+
+   .left_right_layout section:nth-child(even) article{float:left;left:0%;}
+
+
+
+ 
+    /*--------------------------------------------------------------------------------------------------------*/
+      
+      /* process進度表流程 加入會員通用固定三步驟 有色bar */   
+     /*--------------------------------------------------------------------------------------------------------*/
+
+    .step_process {width: 1100px;box-shadow: 0px 0px 10px #d2d2d2;margin: 25px auto;
+    background: #fff;overflow:auto;border-radius:15px;}
+	
+    /* bar */   
+    .step_process>div{padding:30px 15px;border-bottom:1px solid #d2d2d2}
+
+    .step_process>div>span{display:block;height:15px;box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2) ;border-radius: 5px;overflow: hidden;}
+    
+    .step_process>div>span>p{background: linear-gradient(to right, #db5009 , #FFB105);height:100%}
+    
+    .step1{width:33%;}  .step2{width:67%;}   .step3{width:100%;} 
+
+     /* text */   
+	.step_process ul li{float:left;width:33.333%;border-right:1px solid #d2d2d2;padding:15px;text-align: center;border-bottom:8px solid #333;background:#f5f5f5; }
+
+	.step_process ul li:last-child{border-right:0px solid #d2d2d2;}
+
+	.step_process ul li h2:before{content:"STEP";font-size:0.3em;display:block;letter-spacing:0.5px;}
+	
+	.step_process ul li h2{font-size:2.6em;font-weight:bold;}
+	
+	.step_process ul li p:before{content:"▸";padding-right:2px;font-size:0.6em;}
+	
+	.step_active{color:#db5009;}
+
+
+      /* process進度表流程 用於一般頁面可多項 純文字格式 4分割*/   
+     /*--------------------------------------------------------------------------------------------------------*/
+     
+    .step_process2 {width: 100%;margin: 25px auto;background: #eaeaea;overflow:auto;border:1px solid #d2d2d2}
+
+     /* text */   
+	.step_process2 ul li{float:left;border-right:1px solid #d2d2d2;padding:15px;text-align: center;color:#333;opacity:0.5;width:25%; }
+    
+    .step_process2 ul li:last-child{border-right:1px solid rgba(0,0,0,0.0); }
+
+    .step_process2  .step2_active{opacity:1;font-weight:bold;background:#Db5009;color:#fff;}
+	
+	
+
+
+   /*--------------------------------------------------------------------------------------------------------*/
+   
+    
+
+      
+   
+
+
+    /*--------------------------------------------------------------------------------------------------------*/
+    /* table表格定義*/
+    .table_con{overflow:auto;padding:5px;}
+
+    .table_con>h2:before{content:"•";padding-right:5px;}
+   
+    .table_style{width:98%;margin:20px auto;border-collapse:collapse;}
+
+     .table_style2{width:100%;margin:20px auto;border-collapse:collapse;}
+
+	.table_style th{background:#b3b3b3;color:#fff;border:1px solid rgba(232,232,232,1);padding:10px;}
+
+	.table_style2 th{background:#fff;color:#666;border:1px solid #e5e5e5;padding:10px;}
+
+	.table_style td{background:#fff;border:1px solid rgba(232,232,232,1);padding:10px;text-align: center;}
+
+    .table_style2 td{background:#fff;border:1px solid #e5e5e5;padding:10px;text-align: center;color:#db5009}
+
+  
+    
+   /*--------------------------------------------------------------------------------------------------------*/
+
+    /* btn design*/
+    /* btn1 橘色 固定尺寸-用在表單*/
+    /* btn1＿1 灰色 固定尺寸-用在表單*/
+     
+     .btn1{width:100px;height:40px;border-radius:15px;color:#fff;background:#db5009;display:inline-block;text-align:center;line-height:40px;margin:10px;font-size:1em;font-weight:bold;transition:0.25s ease-in;}
+   
+     .btn1:hover{border-radius:0px;transition:0.25s ease-in;background:#333;}
+    
+     .btn1_1{width:100px;height:40px;border-radius:15px;color:#fff;background:#333;display:inline-block;text-align:center;line-height:40px;margin:10px;font-size:1em;font-weight:bold;}
+     
+     .btn2{padding:15px 30px;background:#db5009;color:#fff;font-weight:bold;}
+     
+     .btn2_1{padding:15px 30px;background:#333;color:#fff;font-weight:bold;}
+
+     .btn_download{height:60px;padding:0px 15px;line-height:60px;font-weight:bold;border:3px solid rgba(0,0,0,1);display:inline-block;}
+
+     .btn_full{width:100%;display:block;text-align: center;padding:15px 0px;background:#333;color:#fff;font-weight:bold;letter-spacing:0.5px;transition:0.25s ease-out;}
+
+     .btn_full span:before{content:"✚";padding-right:5px;display:inline-block;transition:0.25s ease-out;}
+    
+     .btn_full:hover{background:#db5009;transition:0.25s ease-out;}
+
+     
+
+
+  
+
+    /*--------------------------------------------------------------------------------------------------------*/
+     
+    /*服務條款 備註 說明事項 皆可以用此項目*/
+
+	    .notice_page{width:100%;padding:15px;margin-bottom:25px;}
+
+	    .notice_page h3{margin:10px 0px;font-weight:bold;color:#db5009;border-left:4px solid #db5009;padding-left:5px;}
+
+	    .notice_page ol{padding:2px 15px;}
+
+	    .notice_page ol ol{padding:2px 15px;}
+
+	    .notice_page ol li{line-height:1.8;}
+
+    /*--------------------------------------------------------------------------------------------------------*/
+
+   /* pop window 設定*/
+   /*--------------------------------------------------------------------------------------------------------*/
+
+   	.pop{width:100%;height:100%;position:fixed;background:rgba(0,0,0,0.6);z-index:1000;display:none;}
+	
+	.pop_window{width:780px;position:fixed;z-index:2000;background:#fff;top:10%;left:50%;margin-left:-390px;box-shadow: 0 0 8px 4px rgba(0,0,0,0.2);border-radius:15px;}
+	
+	.pop_window .tit_bar{width:100%;height:60px;background:#333;padding-left:15px;color:#fff;line-height:60px;font-size:1.2em;}
+
+	.pop_window .win_content{text-align:center;padding:15px;margin:10px auto;width:90%;font-size:1.2em;}
+
+	.pop_window .win_btn{border-top:1px solid #d2d2d2;text-align: center;}
+
+     /*--------------------------------------------------------------------------------------------------------*/
+     
+     /* 頁面標題 */
+
+     .page_title{width:100%;margin-bottom:25px;padding:15px;font-size:1.6em;font-weight:900;background:#fff;color:#db5009;box-shadow:0px 4px 6px 0px #d2d2d2;} 
+   
+     .page_title:before{content:" ▍";padding-right:5px;font-weight:bold;}
+    
+
+     /* 元件製作 data_pannel 功能型表格 */
+     /*--------------------------------------------------------------------------------------------------------*/
+     .data_panel {width:100%;overflow:auto;border:1px solid #d2d2d2;border-radius:0px;box-shadow:2px 3px 6px 0px rgba(0,0,0,0.0);margin-bottom:45px;border-bottom:0px;border-right:0px;}
+     
+     .data_panel>h2{color:#fff;font-weight:bold;padding:10px 25px;border-bottom:0.5px solid #d2d2d2;box-shadow:0 0 6px rgba(0,0,0,0.2);background:#333;} 
+
+     .data_panel>div{overflow:auto;border-bottom:0.5px solid #d2d2d2;border-right:0.5px solid #d2d2d2;}
+    
+     .data_panel>div>article{width:50%;float:left;padding:15px;}
+
+     .data_panel>div>div{width:20%;float:left;padding:15px;}
+
+     .data_panel p{color:#333;font-size:1em;}
+     
+     .data_panel p:before{content:"⊙";color:rgba(0,0,0,0.2);padding-right:2px;}
+
+     .data_panel h3{color:#Db5009;font-weight:700;padding-left:20px;line-height:2.0;letter-spacing: 0.6px;}
+
+     .data_panel a{text-transform: uppercase;padding-right: 15px; letter-spacing: 1px; font-size: 0.9em;color: #fff;padding: 5px 10px;margin: 10px 5px;background: #938874; transition: 0.25s ease-out;
+                   display: inline-block;}
+     
+     .data_panel a:hover{background:#db5009;transition:0.25s ease-out;}
+     
+     .data_panel a:before{content:"▾";padding-right:5px;display:inline-block;font-size:0.9em;}
+     
+     .data_panel>div>div>button{border:none;display:block;background:#999;color:rgba(255,255,255,1);font-size:1em;cursor:pointer;width:100%;transition:0.25s ease-out;padding:20px 0px;opacity:0.5;}
+
+     .data_panel>div>div>button>span:before{content:"✕";padding-right:5px;transition:0.25s ease-in;display:inline-block;}
+    
+    .data_panel>div>div>button:hover{background:#db5009;transition:0.25s ease-out;color:rgba(255,255,255,1);opacity:1;}
+
+.data_panel>div>div>button:hover span:before{transform:rotate(180deg) ;padding-right:25px;transition:0.35s ease-in;}
+    
+
+     /*--------------------------------------------------------------------------------------------------------*/
+     /* 下載元件 */
+     .download_component{width:100%;padding:15px;margin-bottom:25px;border-radius:0px;box-shadow:0 0 5px #d2d2d2;text-align:center;
+border-bottom:12px solid rgba(0,0,0,0.8);border-top:0px solid rgba(0,0,0,0.2);border-radius: 15px;}
+     
+     .download_component h2{font-weight:bold;color:#db5009;margin:25px;background:#f5f5f5;padding:15px 0px;box-shadow:inset 0 0 5px rgba(0,0,0,0.2)}
+
+     .download_component article{background:#efefef;width:30%;display:inline-block;margin:10px 5px;border:1px solid #d2d2d2;transition:0.25s ease-out;border-radius:5px;}
+
+     .download_component article:hover{background:#db5009;transition:0.25s ease-out;box-shadow:inset 0 0 35px rgba(0,0,0,0.4)}
+
+     .download_component article:hover a{color:#fff;transition:0.25s ease-out;}
+
+     .download_component article:hover span:after{transform:rotate(180deg);transition:0.25s ease-out;color:#fff;}
+
+     .download_component article:hover span{transition:0.25s ease-out;color:#fff;}
+
+
+
+     .download_component article a{padding:20px;font-weight:bold;color:#333;display:block;position:relative;}
+
+     .download_component article a span{font-weight:bold;color:#333;font-size:2.9em;line-height:1;display:block;}
+
+     .download_component article a span:after{content:"▾";display:block;transition:0.25s ease-out;font-size:0.5em;color:#333;}
+      /*--------------------------------------------------------------------------------------------------------*/
+      /* 側選單*/
+        .side_menu{width:90%;border:1px solid rgba(0,0,0,0.2);border-radius:0px;overflow:hidden;overflow:auto;margin:25px auto;}
+	          
+		.side_menu ul li{border-right:1px solid rgba(0,0,0,0.2);border-left:0px solid #333;float:left;text-align:center;}
+		
+		.side_menu ul li:last-child{border-right:0px solid rgba(0,0,0,0.2);}
+		
+		.side_menu ul li a{font-size:1.1em;display:block;padding:15px;letter-spacing:0.6px;transition:0.25s;position:relative;font-weight:bold;}
+		
+		.side_menu ul li a:hover{background:#db5009;color:#fff;transition:0.25s;}
+	
+		
+		.side_menu ul li:hover a:after{transform:rotate(180deg);transition:0.25s;color:#fff;}
+		
+		
+		.side_menu_active{color:#db5009;font-weight:bold;}
+
+       .s50{width:50%}  .s33{width:33.333%} .s25{width:25%}
+       /*--------------------------------------------------------------------------------------------------------*/
+       
+      /*news 最新消息*/
+
+        .news{width:100%;margin:15px auto;overflow:hidden;}
+       
+        .news>h2{font-weight:900;color:#db5009;margin-bottom:15px;}
+        
+        .news  ul li:before{content:"▸";padding-right:5px;}
+        
+        .news  ul li:nth-child(odd) {padding:15px;background:#efefef;border-bottom:1px solid rgba(0,0,0,0.05)}
+        
+        .news  ul li:nth-child(even) {padding:15px;background:#f5f5f5;border-bottom:1px solid rgba(0,0,0,0.05)}
+        
+        .news  ul li span{padding-right:15px;color:#333;}
+        
+        .news  ul li span:after{content:"|";padding-left:15px;}
+       
+        .news  ul li a:hover{color:#db5009;transition:0.25s ease-out;text-decoration: none;}
+    
+
+        .news>article>h2{padding:10px;border-top:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;color:#db5009;}
+       
+         .news>article>h3{padding:10px;text-align:right;}
+
+      		
+        /*號碼樣式*/
+		 
+         .page_number{width:100%;margin:10px 15px;text-align:center;padding:15px;}
+		 
+		 .page_number a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;}
+		 
+		 .page_number a:hover{background:#db5009;transition:0.25s ease-out;}
+
+
+
+       /*--------------------------------------------------------------------------------------------------------*/
+
+        
+		 /*精選活動推薦*/
+		  
+		 .recommand{overflow:auto;-webkit-overflow-scrolling:touch;}
+		  
+		.recommand>.activity_3col{width:100%;margin:15px auto;overflow:auto;-webkit-overflow-scrolling:touch;}
+
+        .recommand>.activity_3col>h2{font-weight:900;color:#db5009;margin-bottom:15px;}
+		  
+        .recommand>.activity_3col>div{float:left;width:33.33%;overflow:hidden;padding:1%;}
+
+        .recommand>.activity_3col>div img{width:100%;display:block;transition:0.25s ease-out;border:1px solid rgba(0,0,0,0.2);}
+
+        .recommand>.activity_3col>div>h3{font-weight:400;margin-top:5px;}
+		
+       /*--------------------------------------------------------------------------------------------------------*/
+     
+       /*activity 精選活動推薦*/
+    
+        .activity{width:49%;display:inline-block;}
+		
+		.activity>h2{font-weight: 900;color: #db5009;margin-bottom: 15px;}
+		
+		.activity div{width:100%;padding:1%;}
+		
+		.activity div img{width:100%;border:1px solid rgba(0,0,0,0.2)}
+
+
+       /*--------------------------------------------------------------------------------------------------------*/
+
+       /*嚴選商家*/
+
+      .store>.activity_4col{width:100%;margin:15px auto;overflow:auto;}
+
+      .store>.activity_4col>h2{font-weight:900;color:#db5009;margin-bottom:15px;}
+
+      .store>.activity_4col>div{ width:23%;overflow:hidden;padding:5px;height:120px;border:1px solid rgba(0,0,0,0.2);margin:1%;vertical-align: top;}
+
+      .store>.activity_4col>div img{width:90%;display:block;transition:0.25s ease-out;margin:0px auto}
+       
+      .store>.activity_4col>div>h3{font-weight:400;margin-top:5px;}
+x
+      .store div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+
+
+      .store div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
+
+      .store div span a:hover{background:#db5009;transition:0.25s ease-out;}
+
+
+      /*產品-紅配綠-最新產品-滿額贈活動-顯示方式*/
+
+   
+      .new{display:block;position:relative;margin:0px;}
+
+      .new::before{content:"NEW"; font-size: 14px; background: #db5009; color: #fff;border-radius:5px;position:absolute;top: 5px;left:5px;padding:0px 7px;font-weight:bold;}
+
+      .full_small{background:#8E04B9;display:inline-block;width:10px;height:10px;border-radius:10px;margin-right:4px;}
+
+      .red_small{background:#f00;display:inline-block;width:10px;height:10px;border-radius:10px;margin-right:4px;}
+
+      .green_small{background:#28a745;display:inline-block;width:10px;height:10px;border-radius:10px;margin-right:4px;}
+
+
+
+      .full_big{background:#8E04B9;display:inline-block;width:15px;height:15px;border-radius:15px;margin-right:4px;}
+
+      .red_big{background:#f00;display:inline-block;width:15px;height:15px;border-radius:15px;margin-right:4px;}
+
+      .green_big{background:#28a745;display:inline-block;width:15px;height:15px;border-radius:15px;margin-right:4px;}
+
+   
+
+  
+
+
+
+      /*產品列表*/
+     
+      .product_list>.activity_4col{width:100%;overflow:auto;}
+
+      .product_list>.activity_4col>div{float:left;width:25%;padding:5px;}
+
+      .product_list>.activity_4col>div img{width:100%;display:block;transition:0.25s ease-out;margin:0px auto;border:1px solid rgba(0,0,0,0.2);}
+       
+      .product_list>.activity_4col>div h4{font-weight:400;margin-top:5px;text-align:left;font-size:1em;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+      .product_list>.activity_4col>div p{text-align:left;color:#db5009;font-size:1em;}
+
+      .product_list div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+
+      .product_list div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
+
+      .product_list div span a:hover{background:#db5009;transition:0.25s ease-out;}
+
+
+
+
+
+      /* 推薦產品 product */
+
+      .product{overflow:auto;-webkit-overflow-scrolling:touch;}
+
+      .product>.activity_4col{width:100%;margin:15px auto;text-align:left;clear:both;display: flex;flex-wrap: wrap; }
+
+      .product>.activity_4col>h2{font-weight:900;color:#db5009;margin-bottom:15px;flex: none;width: 100%;}
+
+      .product>.activity_4col>div{float:left;width:23%;overflow:hidden;padding:5px;margin:1%;}
+
+      .product>.activity_4col>div img{width:100%;display:block;transition:0.25s ease-out;margin:0px auto;border:1px solid rgba(0,0,0,0.2);}
+      /* 商品名稱 */ 
+      .product>.activity_4col>div>h3{font-weight:400;margin-top:5px;text-align:left;font-size:16px;color: #5a5a5a;margin-bottom: 0px;}
+
+      .product>.activity_4col>div>p{text-align:left;width:98%;overflow:auto;margin-bottom:0px;}
+
+      .product div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+
+      .product div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
+
+      .product div span a:hover{background:#db5009;transition:0.25s ease-out;}
+
+
+      .product h4{text-align:left;color:#959595;font-size:14px;}
+
+      .product h5{text-align:right;color:#db5009;font-size:20px;font-weight:bold;margin-top:15px;}
+/*--------------------------------------------------------------------------------------------------------*/
+          /*兌換點數＋金額*/
+        .points{color:#333;font-size: 22px;}
+		.points span{
+			color: #333;
+			font-size:13px;
+			padding-left: 3px;
+		}
+		.points:before{
+			content:'';
+			background-image:  url("../img/tgopoint.png");
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size:18px 18px;
+			width: 22px;
+			height: 20px;
+			display:inline-block;
+		}
+		.money:before{
+			content:'';
+			background-image:  url("../img/point_money.png");
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size:36px 18px;
+			width: 40px;
+			height: 20px;
+			display:inline-block;
+		}
+		span.plus {
+			color: #666 !important;
+			font-size: 1.125rem;
+			padding: 0px 2px; 
+		}
+		.oldPoint{padding-left: 5px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;letter-spacing: 1px;}
+
+/*--------------------------------------------------------------------------------------------------------*/
+		/*好咖相伴-優惠方案*/
+		.product .promo_block {margin: 0px;padding: 0px;display: flex;font-size: 0.813rem;justify-items: flex-start;flex-wrap: wrap;
+			align-content: stretch;width: calc(100% + 10px);}
+		.product>.activity_4col>div img.red_green_block{
+			width:auto;height: 26px;margin:0px 4px 4px 0px;border:0px solid #FFFFFF ;flex: none;
+		}
+		.promo_block>span{
+			width:max-content;height:26px; padding: 0px 4px;color:#ee9920;border:1px solid #f2b672;margin:0px 4px 4px 0px;
+			flex: none;
+		}
+     /*--------------------------------------------------------------------------------------------------------*/
+		
+        /*常見問題*/
+	 
+		  .qa{width:100%;padding:5px;}
+		  
+		  .qa>article{border:1px solid rgba(0,0,0,0.1);margin:10px auto;}
+		  
+		  .qa>article>h2{width:inherit;font-weight:bold;color:#db5009;cursor:pointer;position:relative;border-bottom:1px solid rgba(0,0,0,0.0);padding:15px;font-weight:300;}
+		  
+		  .qa>article>h2:before{content:"❚";padding-right:5px;}
+		
+	      .qa>article>h2>span{position:absolute;right:15px;color:#333;font-weight:100}
+		 
+	      .qa>article>ul{padding-left:35px;padding-top:15px;list-style-type:disc;margin-bottom:15px;display:none;}
+	    
+	      .qa>article>ul>li>ul{padding-left:35px;padding-top:15px;list-style-type:square;margin-bottom:15px;}
+	 
+	      .qa>article>ul>li>ul>li>ul{padding-left:35px;padding-top:15px;list-style-type:lower-roman;margin-bottom:15px;}
+
+		  .qa>article>ul>li{padding-bottom:5px;letter-spacing: 0.5px;}
+
+       /*上方分類清單*/
+      
+       .sub_menu{width:1280px;background:#9d9d9d;margin:0px auto;overflow:auto;color:#fff;-webkit-overflow-scrolling:touch;}
+	   
+	   .sub_menu li{float:left;width:150px;}
+	   
+	   .sub_menu li a{display:inline-block;width:150px;text-decoration: none;color:#fff;border-right:1px solid #efefef;box-sizing: border-box;text-align:center;padding:8px;transition:0.25s ease;}
+		 
+	   .sub_menu li a:hover{background:#db5009;color:#fff;transition:0.25s ease;}
+
+        /*分頁按鈕*/
+
+       .page_btn{padding:6px 26px;border-radius:25px;background:#Db5009;color:#fff;margin:15px;display:inline-block;}
+   
+
+        /*歡迎列＋搜尋 */
+ 
+		.intro{font-size:1em;margin:20px;}
+			  
+		.point{padding:5px 10px;background:#Db5009;color:#Fff;border-radius:15px;margin-left:15px;}
+			  
+			  
+		input.serach{width:40%;display:inline-block;}
+			  
+		input.serach:focus{width:40%;}
+			 
+		 button.sent{width:50px;text-align:center;background:#Dd5009;color:#fff;border:0px;padding:5px;}  
+			
+			  
+		.col50{width:50%;display:inline-block;white-space: normal;font-size:1em;}
+
+		.col50 input.serach::placeholder{color:#333;text-transform: uppercase;}
+
+
+         /*商品規格頁面*/
+		 
+          .downpoint{vertical-align:sub;width:22px;height:26px;border:none;display:inline-block}       
+
+		 .product_item{overflow:auto;-webkit-overflow-scrolling:touch;}
+		 
+		 .product_item>h2{font-size: 1.6em;color: #666;margin: 10px 0px;padding-left: 20px;}
+		 
+		 .product_item>div{float:left;width:40%;}
+		 
+		 
+		 .product_item>div>a>img{width:95%;}
+		 
+		 
+		 .product_item>div>ul{overflow:auto;}
+		 
+		 .product_item>div>ul>li{width:25%;float:left;padding-right:5px;}
+		 
+		 .product_item>div>ul>li>img{width:90%;}
+		 
+		 .product_item>article{float:left;width:50%;padding:10px;}
+		 
+		 .product_item>article>h4{color:#Db5509;font-size:1.4em;font-weight:300;}
+		 
+		 .product_item>article>p{font-size:1em;}
+		 
+		 .product_item>article>div{text-align:right}
+		 
+		 .product_item>article>div>a{padding:10px;color:#fff;display:inline-block;width:150px;text-align:center;margin:15px 5px;}
+		 
+          .main_product{width:80%;}
+
+		 .back{background:#333;}
+		 
+		 .btn_color{background:#db5009;}
+
+                    /*  我的票卷   */
+                   .ticket{overflow:auto;-webkit-overflow-scrolling:touch;}
+
+                   .ticket th{background:#9a9a9a;color:#fff;border:1px solid #d2d2d2;height:40px;}
+
+                   .ticket>h2{font-size:1.4em;color:#db5009;font-weight:bold;text-align:center;margin-bottom:10px;}
+           
+                   /*  我的票卷---五欄式*/
+
+                   .ticket .ticket_list_5col{width:1200px;border:1px solid #d2d2d2;border-collapse:collapse;margin:0px auto;}
+				   
+				   .ticket .ticket_list_5col .col1{width:250px;padding:5px;border:1px solid #d2d2d2;text-align:center;}
+				   
+				   .ticket .ticket_list_5col .col1 img{width:80%;}
+				   
+				   .ticket .ticket_list_5col .col2 {width:500px;padding-left:25px;border:1px solid #d2d2d2}
+				   
+				   .ticket .ticket_list_5col .col2 h2{font-size:1.2em;color:#db5009}
+				   
+				   .ticket .ticket_list_5col .col2 p{font-size:1em;}
+				   
+				   .ticket .ticket_list_5col .col2 span{font-size:0.9em;}
+				   
+				   .ticket .ticket_list_5col .col3 {width:400px;padding:25px;text-align:center;border:1px solid #d2d2d2}
+			          
+                   .ticket .ticket_list_5col .col4 {width:150px;text-align:center;border:1px solid #d2d2d2;padding:10px;}
+
+                   .ticket .ticket_list_5col .col5 {width:150px;text-align:center;border:1px solid #d2d2d2}
+
+                   .ticket .ticket_list_5col .col5 a{padding:15px;margin:5px;background:#db5009;color:#fff;transition:0.25s ease}
+
+                   .ticket .ticket_list_5col .col5 a:hover{background:#333;transition:0.25s ease;}
+
+				  
+                   /*  我的票卷---四欄式*/
+ 
+				   .ticket .ticket_list_4col{width:1200px;border:1px solid #d2d2d2;border-collapse:collapse;margin:0px auto;}
+				   
+				   .ticket .ticket_list_4col .col1{width:100px;padding:5px;border:1px solid #d2d2d2;text-align:center;}
+				   
+				   .ticket .ticket_list_4col .col1 img{width:90%;}
+				   
+				   .ticket .ticket_list_4col .col2 {width:400px;padding-left:25px;border:1px solid #d2d2d2}
+				   
+				   .ticket .ticket_list_4col .col2 h2{font-size:1.2em;color:#db5009}
+				   
+				   .ticket .ticket_list_4col .col2 p{font-size:1em;}
+				   
+				   .ticket .ticket_list_4col .col2 span{font-size:0.9em;}
+				   
+				   .ticket .ticket_list_4col .col3 {width:300px;padding:25px;text-align:center;border:1px solid #d2d2d2}
+			          
+			       .ticket .ticket_list_4col .col4 {width:300px;text-align:center;border:1px solid #d2d2d2}
+
+                   .ticket .ticket_list_4col .col4s {width:300px;text-align:center;border:1px solid #d2d2d2;padding:25px;}
+			
+				   .ticket .ticket_list_4col .col4>a{padding:15px;margin:5px;background:#db5009;color:#fff;transition:0.25s ease}
+				   
+				   .ticket .ticket_list_4col .col4>a:hover{background:#333;transition:0.25s ease;}
+     
+                    /*  我的票卷---兩欄式*/
+
+                    .ticket .ticket_list_2col {width:1200px;border:1px solid #d2d2d2;border-collapse:collapse;margin:0px auto;}
+
+                    .ticket .ticket_list_2col .col1{width:300px;padding:5px;border:1px solid #d2d2d2;text-align:center;}
+				   
+				    .ticket .ticket_list_2col .col1 img{width:70%;}
+
+
+                    .ticket .ticket_list_2col .col2 {width:900px;padding-left:25px;border:1px solid #d2d2d2}
+				   
+				   .ticket .ticket_list_2col .col2 h2{font-size:1.2em;color:#db5009}
+
+				   .ticket .ticket_list_2col .col2 h4{font-size:1.2em;color:#db5009}
+				   
+				   .ticket .ticket_list_2col .col2 p{font-size:1em;}
+				   
+                   .ticket .ticket_list_2col .col2 span{font-size:0.9em;}
+                    
+			   /*  我的票卷---三欄式*/
+
+                    .ticket .ticket_list_3col {width:1200px;border:1px solid #d2d2d2;border-collapse:collapse;margin:0px auto;}
+
+                    .ticket .ticket_list_3col .col1{width:250px;padding:5px;border:1px solid #d2d2d2;text-align:center;}
+				   
+				    .ticket .ticket_list_3col .col1 img{width:100%;}
+
+
+                   .ticket .ticket_list_3col .col2 {width:800px;padding:5px;border:1px solid #d2d2d2}
+				   
+				   .ticket .ticket_list_3col .col2 h2{font-size:1.2em;color:#db5009}
+				   
+				   .ticket .ticket_list_3col .col2 p{font-size:1em;}
+
+                   .ticket .ticket_list_3col .col2 h5{font-size:1.1em;color:#db5009;}
+ 
+                   .ticket .ticket_list_3col .col2 h4{font-size:1.2em;color:#db5009}
+				   
+				   .ticket .ticket_list_3col .col2 span{font-size:0.9em;}
+			  
+			       
+
+                   .ticket .ticket_list_3col .col3 a{padding:15px;margin:5px;background:#db5009;color:#fff;transition:0.25s ease}
+                   
+                   .ticket .ticket_list_3col .col3 a:hover{background:#333;transition:0.25s ease;}
+
+			       .ticket .ticket_list_3col .col3{width:300px;padding:5px;border:1px solid #d2d2d2;text-align:center;}
+			  
+			       .ticket .ticket_list_3col .col3 img{width:70%;}
+			     
+           /*兌換票卷詳細條碼區塊*/
+			 
+			 .ticket .detail {width:60%;margin:20px auto;border:1px solid #d2d2d2;text-align:center;border-radius:45px;cursor:pointer}
+			 
+			 .ticket .detail h2{font-size:1.2em;color:#db5009;padding:15px;border-top:1px solid #d2d2d2;}
+			 
+			 .ticket .detail p{padding:15px;border-top:1px solid #d2d2d2;font-size:1em}
+			 
+			 .ticket .detail img{width:230px;padding:5%;}
+			 
+
+
+                /*分類清單*/      
+		
+			   .page_menu{overflow:auto;width:100%;background:#fff;margin-bottom:15px;}
+			   
+			   .page_menu ul{width:100%;margin:0px;padding:0px;list-style-type:none;border-collapse: collapse;}
+			   
+			   .page_menu ul li{float:left;border:1px solid #F2f2f2;}
+			   
+			   .page_menu ul li a{width:100%;display:block;text-align:center;padding:15px;}
+		  
+               .col25{width:25%}
+
+               .col33{width:33%;}
+
+               .col50s{width:50%;}
+  
+               /*  活動快訊  */
+
+              .act{width:98%;overflow:auto;margin:10px auto;}
+			  
+			  .act_item{width:31%;margin:10px 1%;border:1px solid #d2d2d2;float:left;background:#fff;;}
+			  
+			  .act_item img{width:100%;padding:5px;}
+			  
+			  .act_item article{padding:5px;height:120px;overflow:hidden;}
+			  
+			  .act_item h2{font-size:1.2em;color:#db5009;}
+			  
+			  .act_item p{font-size:1em;}
+			  
+			  .act_item a {display:block;margin:20px auto;width:40%;color:#Fff;background:#db5009;padding:5px;text-align: center;border-radius:16px;transition:0.25s ease;}
+			  
+			  .act_item a:hover{background:#333;transition:0.25s ease;}
+
+        /*我的票卷-票卷轉贈-可使用票數數量 樣式*/
+							  
+		 .ticket_no{text-align:center;font-size:1em;color:#333;letter-spacing:1.2px}
+							  
+         .ticket_item{text-align:center;font-size:3em;color:#db5009;margin:5px;}
+
+
+
+       /* 文字訊息筐 用於公告事項*/
+       
+       .message_box{display:inline-block;border-radius:15px;border:1px solid #d2d2d2;font-size:1.2em;letter-spacing: 0.6px;padding:15px;background:#Db5009;color:#fff;text-transform:uppercase;}
+
+       .message_box h2{background:#333;color:#fff;text-align:center;padding:5px 0px;font-weight:bold;}
+
+       .message_box p{padding:5px;}
+
+
+
+
+       /*--------------------------------------------------------------------------------------------------------*/
+       /* 我已同意上述服務條款的按鈕居中控制*/
+      .agreen_area{width:100%;text-align: center;}
+      .agreen_area a{color:#Db5009;}
+      
+
+
+
+
+
+
+
+      /*--------------------------------------------------------------------------------------------------------*/
+/* bootstrap banner 修正*/
+.carousel-indicators{bottom:-10px;}
+
+.carousel-indicators li{background:#fff;width:15px;height:15px;border-radius:15px;border:1px solid rgba(0,0,0,0.2);margin:8px;cursor:pointer;transition:0.25s;}
+
+
+.carousel-indicators li:hover{background:#db5009;transition:0.25s;}
+
+
+.carousel-indicators .active{background:#db5009;}
+  /*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+      /* newpage 仿照公司內容頁面*/
+
+       .newpage{width:100%;padding:10px;}
+       
+       .newpage>h2{color:#Db5009;font-weight:bold;}
+       
+       .newpage>.pagebanner>img{width:100%;margin:10px 0px;border:1px solid #d2d2d2}
+   
+       .newpage>.pagebanner>p{padding-left:15px;}
+
+       .newpage>.sec{padding:15px;}
+
+       .newpage>.sec>article{padding:15px;}
+
+       .newpage>.sec>h3{color:#db5009;border-left:4px solid #Db5009;background:#f5f5f5;padding:5px 10px;font-weight:bold;margin:10px 0px;}

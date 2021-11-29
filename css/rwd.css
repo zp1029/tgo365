@@ -1,0 +1,603 @@
+@charset "UTF-8";  
+	
+/* 媒體查詢 */
+/*--------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1281px)
+	{ 
+		.con,.con_banner,.con_sub{width:98%;}
+		.form_con{width:96%;margin:5px auto;}
+		.form_tit{width:96%;margin:15px auto;}
+		.form_process{width:96%;margin:15px auto;}
+		.step_process{width:96%;margin:15px auto;}
+		.banner{width:100%;height:auto;}
+	 }
+
+@media screen and (max-width:1101px)
+		{
+			 /* 彈跳視窗設定 */  
+			 /*  .modal_pop{width:96%;margin-left:-48%;}*/  
+			
+		    .modal_pop{width:90%;margin-left:-45%;}
+
+			
+			
+			
+			.wrapper{width:100%;padding:5px;}
+			
+			/* 表單contianer */  
+		    .form_con{width:100%;}
+			 
+		    .cal{border-collapse:collapse;width:9%;margin:10px auto;box-sizing: border-box;font-size:1em;line-height:30px;}
+			
+			
+	
+	   }
+
+	
+	@media screen and (max-width:1025px)
+	{
+		
+		.header_con{width:100%;margin:0px;}
+	    
+		.form_text{padding-left:5%;margin-bottom:5px;display:block}
+
+		.blc{height:auto;}
+		
+		.con , .con_banner ,.con_sub {width:96%;margin:5px auto 25px auto;}
+		
+		
+		
+		 header{padding:5px;}
+		
+		.tit{font-size:18px;;height:40px;line-height:40px;padding-left:10px;}
+
+		#loader>div{
+		width:30px;height:30px;border:8px solid #efefef;position:absolute;
+		top:50%;left:50%;margin-top:-15px;margin-left:-15px;border-radius:50%;border-top:8px solid  #Db5009;}
+		
+		.c50{width:100%;float:none;transition:0.25s;}
+		
+		.c50 img{display:none;}
+		
+		.m_box{width:80%;padding-bottom:20px;}
+
+		.btn_set{width:40%;box-sizing: border-box;padding:10px 0px;}
+
+		.msg_box{width:100%;padding:10px;clear:both;}
+	
+		.float_right{float:none;}
+		
+		
+        .list_btn_con{width:50%;}
+		
+		.upload_btn{width:75%;}
+		
+		.hint{font-size:1.4em;}
+		
+		.infor-bar{font-size:0.9em;margin:15px auto;}
+		
+		.info_btn{margin:4px auto;width:90%;vertical-align:top;margin-top:-6px;font-size:0.9em;}
+			
+		.table_style{width:98%}
+		
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"]{height:41px;width:100%;}
+		
+		select,input[type="date"]{width:100%;height:41px;display:block;outline:none;margin:10px auto;font-size:1em;color:#333333;border:1px solid rgba(0,0,0,0.2);border-radius:0px;transition:0.65s;box-sizing: border-box;box-shadow:0px 0px 0px rgba(0,0,0,0);background:#ffffff;margin-top:5px;padding:0px; }
+		
+		.form_c33{padding:5px;margin:2px auto;width:32%;}
+		
+		.form_text3,.form_text{padding-left:0px;}
+		
+		header ul li{float:left;line-height:60px;padding:0 5px;color:#333;font-size:1em;letter-spacing:0.2px;transition:0.25s linear;font-weight:600;}
+	
+		
+		 /*.welcome>span{padding:5px;display:block;width:100%;margin:0px;}*/
+	
+	}
+	
+
+
+
+
+@media screen and (max-width:801px)
+	{
+		 
+		html,body{font-size:0.95em;}
+		
+		
+		  .btn1{width:23%;height:40px;border-radius:5px;text-align:center;line-height:40px;margin:5px;font-size:1em;font-weight:bold;transition:0.25s ease;}
+		
+		/* 關掉pc選單 開啟mobile btn*/
+		nav{display:none;}
+		
+		 .news>h2{font-weight:500;}
+		
+		 .activity>h2{font-weight:500;}
+		
+		  .page_title{font-size:1.4em;font-weight:500;} 
+		
+		.logo{width:100px;height:40px;position:absolute;top:10px;left:5px;margin-top:0%;}
+		
+		.logo img{height:100%;}
+		
+		.mobile_btn,.cross_btn,.mobile_txt{display:block;}	
+		
+	    header ul {width:100%;height:100%;position:fixed;top:0px;right:0px;z-index:2000;transition:0.25s linear;background:#333;}
+		
+		header ul li{float:none;line-height:60px;padding:0px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.1);text-align:center;}
+				
+		header ul li a{display:block;width:100%;font-size:1.2em;position:relative;}
+		
+		header ul li a:after{content:"❯";position:absolute;right:2%;color:rgba(255,255,255,0.4);display:inline-block;transition:0.25s ease-out;}
+		
+		header ul li a:hover{background:#Db5009;color:#fff;}
+		
+		header ul li:hover a:after {color:rgba(255,255,255,1);transform:rotate(180deg);transition:0.25s ease-in;}
+		
+		/* pop window從固定寬度 改為依照比例*/
+		.pop_window{width:90%;margin-left:-45%;}
+		
+		/* 手機版的banner */
+		.banner{display:none;width:100%;height:378px;background:#fff;margin:0px 0px 10px 0px;border:0px solid rgba(0,0,0,0.2)}
+		
+		.mbanner{display:block;width:100%;}
+		
+		/* 冊選單調整 */
+		.side_menu{width:100%;}
+
+		.side_menu ul li { width:100%;float:none;border-bottom:1px solid rgba(0,0,0,0.1);border-right:0px solid rgba(0,0,0,0.1)}
+		
+	    .side_menu ul li:last-child { border-bottom:0px solid rgba(0,0,0,0.1);}
+		
+		.side_menu ul li a{font-size:1.20em;}
+		
+		
+		
+		.s50,.s25,.s33{width:100%;}
+		
+		/*左右板型調整*/
+   
+       .left_right_layout section div{width:100%;float:none;}
+
+       .left_right_layout section div img{width:100%;display:block;}
+
+       .left_right_layout section:nth-child(odd) div{float:none;}
+
+       .left_right_layout section:nth-child(even) div{float:none}
+
+       .left_right_layout section article{width:100%;position:static;transform:translateY(0%)}
+
+       .left_right_layout section:nth-child(odd) article{float:none;}
+
+       .left_right_layout section:nth-child(even) article{float:none;}
+		
+		
+         /*data_panel 修正 子div width 20% 調整為 50%,最後一顆按鈕為100%*/
+		
+		 .data_panel>div>div{width:50%;float:left;padding:15px;}
+		
+		 .data_panel>div>div:last-child{width:100%;float:none;padding:15px;}
+		
+		  .data_panel a{;padding: 5px 10px;margin: 10px;background: #938874; transition: 0.25s ease-out; }
+                 
+		
+		 /*activity_3col>div 修正 子div width 31.33% 調整為 98%,中*/
+		.activity_3col{width:1280px;}
+       
+		 .activity_3col>div>h3{text-align:center;font-weight:bold;}
+		
+		
+		.activity_4col{width:1280px;}
+		
+		  .con .material-icons{display:inline-block;}
+     
+		
+		/* con_s96 調整為98% padding減少*/
+		 .con_s96{width:100%;padding:0px;}
+		
+		/* step_process2 程序表用於一般頁面 padding減少*/
+		.step_process2 ul li{padding:10px 5px;}
+		
+		/* boostrap 圖片控制*/
+		.carousel-inner img {width:100%;}
+		
+		.con_banner img{width:100%;}
+		
+		
+		 /*activity 精選優惠*/
+       
+         .activity{width:100%;margin:15px auto;overflow:inherit;height:auto;}
+		
+		.activity div{float:none;width:98%;padding:1%;margin:15px auto;}
+		
+		/*footer*/
+	     footer>div{width:98%;margin:0px auto 5px auto;text-align: center;}
+		
+        footer{font-size:0.85em;line-height:1.3;}
+		
+	     footer>div>a{margin-left:15px;font-size:4em;padding-bottom:25px;}
+		
+		footer>a{letter-spacing: 0.5;font-weight:bold;line-height:1.8;}
+		
+		footer>p{margin-top:5px;font-weight:bold;}
+				
+		/*moal*/
+	  /*modal compent and pop windnow*/
+
+
+
+
+    
+
+		
+		
+	 /*嚴選商家*/
+
+      .store>.activity_4col{width:100%;margin:15px auto;overflow:auto;}
+
+      .store>.activity_4col>h2{font-weight:500;color:#db5009;margin-bottom:15px;}
+
+      .store>.activity_4col>div{float:left;width:47%;overflow:hidden;padding:5px;height:auto;border:1px solid rgba(0,0,0,0.2);margin:1%;}
+
+      .store>.activity_4col>div img{width:90%;display:block;transition:0.25s ease-out;margin:0px auto}
+       
+      .store>.activity_4col>div>h3{font-weight:400;margin-top:5px;}
+
+      .store div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+
+      .store div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
+
+      .store div span a:hover{background:#db5009;transition:0.25s ease-out;}
+		
+		
+		  
+		 /*精選活動推薦*/
+		  
+		 .recommand{overflow:auto;}
+		  
+		.recommand>.activity_3col{width:1280px;margin:15px auto;overflow:auto;}
+
+        .recommand>.activity_3col>h2{font-weight:500;color:#db5009;margin-bottom:15px;}
+		  
+        .recommand>.activity_3col>div{float:left;width:30%;overflow:hidden;padding:1%;}
+
+        .recommand>.activity_3col>div img{width:100%;display:block;transition:0.25s ease-out;border:1px solid rgba(0,0,0,0.2);}
+
+        .recommand>.activity_3col>div>h3{font-weight:400;margin-top:5px;font-size:0.9em;}
+		
+		
+		
+	 /* 推薦產品 product */
+
+      .product{overflow:auto;}
+
+     .product>.activity_4col{width:100%;/*margin:15px auto;text-align:left;padding:0px;overflow:auto;*/display: flex;justify-content: flex-start;align-items: stretch;flex-wrap: wrap;}
+
+      .product>.activity_4col>h2{font-weight:500;width: 100%;flex: none;}
+
+      .product>.activity_4col>div{max-width: 48%;width: 48%;vertical-align: top;flex: none;}
+
+      .product>.activity_4col>div img{width:100%;display:block;transition:0.25s ease-out;border:1px solid rgba(0,0,0,0.2);}
+       
+      .product>.activity_4col>div>h3{}
+
+      .product>.activity_4col>div>p{}
+
+      .product div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+
+      .product div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
+
+      .product div span a:hover{background:#db5009;transition:0.25s ease-out;}	
+
+
+	  /*產品列表*/
+     
+      .product_list>.activity_4col{width:100%;margin:15px auto;overflow:auto;}
+
+      .product_list>.activity_4col>div{float:none;width:98%;padding:0px;margin:5px auto;}
+
+      .product_list>.activity_4col>div img{width:100%;display:block;transition:0.25s ease-out;margin:0px auto;border:1px solid rgba(0,0,0,0.2);}
+       
+      .product_list>.activity_4col>div h4{font-size:1em;}
+		
+      .product_list>.activity_4col>div p{font-size:0.9em;font-weight:600;}
+
+      .product_list div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+
+      .product_list div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
+
+      .product_list div span a:hover{background:#db5009;transition:0.25s ease-out;}
+		
+	    /*商品規格頁面*/
+		 
+		 .product_item{overflow:auto;}
+		 
+		 .product_item>h2{font-size:1.2em;margin:10px 0px;font-weight:600;}
+		
+		.downpoint{vertical-align:sub;width:22px;height:26px;border:none;display:inline-block} 
+		
+		 .product h5{font-size:1em;}
+		 
+		 .product_item>div{float:none;width:100%;text-align:center;}
+		 
+		 
+		 .product_item>div>a>img{width:95%;}
+		 
+		 
+		 .product_item>div>ul{overflow:auto;}
+		 
+		 .product_item>div>ul>li{width:25%;float:left;padding-right:1px;}
+		 
+		 .product_item>div>ul>li>img{width:80%;}
+		 
+		 .product_item>article{float:none;width:100%;padding:10px;}
+		 
+		 .product_item>article>h4{color:#Db5509;font-size:1.2em;font-weight:300;}
+		 
+		 .product_item>article>p{font-size:0.9em;}
+		 
+		 .product_item>article>div{text-align:center}
+		 
+		 .product_item>article>div>a{padding:15px 5px;color:#fff;display:inline-block;width:29%;text-align:center;margin:15px 5px;border-radius:5px;font-size:1.1em;font-weight:bold;transition:0.25s ease;}
+		 
+		 .back{background:#333;}
+		 
+		 .btn_color{background:#db5009;}	
+		
+		
+		       
+		      
+		
+		                 /*我的票卷-四欄式*/
+					     
+					     .ticket .ticket_list_4col{width:800px;border:1px solid rgba(0,0,0,0.1);border-collapse:collapse;}
+				   
+					     .ticket .ticket_list_4col .col1{width:100px;padding:5px;}
+					   
+					     .ticket .ticket_list_4col .col2{width:200px;padding:5px;}
+					   
+					     .ticket .ticket_list_4col .col3{width:200px;padding:5px;}  
+		
+					     .ticket .ticket_list_4col .col4{width:300px;padding:5px;}   
+		                 
+		                 .ticket .ticket_list_4col .col4s{width:150px;padding:5px;}   
+					   
+					     .ticket .ticket_list_4col .col2 h2{font-size:1em;color:#db5009}
+				   
+				         .ticket .ticket_list_4col .col2 p{font-size:0.9em;}
+				   
+				         .ticket .ticket_list_4col .col2 span{font-size:0.8em;display:inline-block;line-height:18px;}
+			   
+		                 /*--我的票卷-兩欄式--*/
+		
+					     .ticket .ticket_list_2col{width:100%;border:1px solid rgba(0,0,0,0.1);border-collapse:collapse;}
+				   
+					     .ticket .ticket_list_2col .col1{width:30%;padding:5px;}
+					   
+					     .ticket .ticket_list_2col .col2{width:70%;padding:5px;}
+					   
+					     .ticket .ticket_list_2col .col2 h2{font-size:1em;color:#db5009}
+				   
+				         .ticket .ticket_list_2col .col2 p{font-size:0.9em;}
+				   
+				         .ticket .ticket_list_2col .col2 span{font-size:0.8em;display:inline-block;line-height:18px;}
+		
+		
+		                 /*--我的票卷-三欄式--*/
+		
+					     .ticket .ticket_list_3col{width:800px;border:1px solid rgba(0,0,0,0.1);border-collapse:collapse;}
+				   
+					     .ticket .ticket_list_3col .col1{width:250px;padding:5px;}
+					   
+					     .ticket .ticket_list_3col .col2{width:300px;padding:5px;}
+					   
+					     .ticket .ticket_list_3col .col2 h2{font-size:1em;color:#db5009}
+				   
+				         .ticket .ticket_list_3col .col2 p{font-size:0.9em;}
+				   
+				         .ticket .ticket_list_3col .col2 span{font-size:0.8em;display:inline-block;line-height:18px;}
+		
+		
+		                 .ticket .ticket_list_3col .col3{width:250px;padding:5px;}
+		
+		
+		
+		 /*兌換票卷詳細條碼區塊*/
+			 
+			 .ticket .detail {width:90%;margin:15px auto;float:none;border-radius:15px;}
+			 
+			 .ticket .detail img{width:60%;padding:5px;}
+		
+			 .ticket .detail h2{font-size:1.2em;padding:5px;}
+			 
+			 .ticket .detail p{padding:5px;font-size:1em}
+			
+		
+		
+	         /*  活動快訊  */
+				  
+			  .act{width:98%;overflow:auto;margin:15px auto;}
+			  
+			  .act_item{width:98%;margin:10px auto 25px auto;float:none}
+			  
+			  .act_item img{width:100%;padding:0px;}
+			  
+			  .act_item article{padding:8px;height:auto;overflow:visible;}
+			  
+			  .act_item h2{font-size:1.2em;color:#db5009;font-weight:bold;}
+			  
+		      .act_item p{font-size:0.9em;line-height:18px;}
+				  
+			  .act_item a {display:block;margin:0px;width:100%;padding:10px;border-radius:0px;}
+			  
+		
+		       /*分類清單*/      
+		
+			   .page_menu{overflow:auto;width:100%;background:#fff;margin-bottom:15px;-webkit-overflow-scrolling:touch;}
+			   
+			   .page_menu ul{width:100%;margin:0px;padding:0px;list-style-type:none;border-collapse: collapse;}
+			   
+			   .page_menu ul li{float:left;border:1px solid #F2f2f2;}
+			   
+			   .page_menu ul li a{width:100%;display:block;text-align:center;padding:10px 5px;font-size:0.9em;letter-spacing:0.2px;font-weight:bold;}
+		
+		
+		
+		
+		 /*歡迎列＋搜尋*/
+		 #x1{background:#333;padding:5px;color:#fff;height:60px;} 
+		   
+		   #x2{background:#fff;padding:5px;color:#fff;border-bottom:1px solid #fff;height:80px;} 
+		   
+		 input.serach{width:83%;display:inline-block;border-radius:15px;padding:8px;}   
+		   
+		 input.serach:focus{width:83%;border-radius:15px;} 
+		   
+		 button.sent{border:0px;padding:12px 5px;font-size:1em;}  
+		   
+		   .con_sub{width:100%;margin:0px;padding:0px;}
+		   
+		.intro{padding-left:5px;line-height:50px;margin:0px;}
+		   
+		.point{padding:3px 5px;margin-left:5px;}
+		   
+		.col50{width:100%;display:block;white-space: normal;font-size:1em;margin:0px;font-size:0.8em;}
+   	   
+		
+	}
+	
+
+
+@media screen and (max-width : 660px )	{
+	
+		#login_section .txt h1{margin-bottom:15px;font-size:2.0em;transition:0.25s;}
+
+		.form_con{padding:3px;width:96%;}
+	
+		.con{width:98%;padding:5px;}
+	    
+	     .con_sub{width:100%;padding:0px;}
+	 
+		.header_menu a{padding:5px;font-size:14px;}
+		
+	    .m_box{width:95%;padding:5px;}
+	
+		.form_c50{padding:0px;margin:5px;width:98%;}	
+	 
+	    .form_c50s{padding:0px;margin:5px;width:46%;}	
+	    
+		.form_c25{margin:5px;padding:0px;width:98%;}
+	
+		.form_c25s{padding:0px;margin:5px;width:98%;}
+	
+	    .list_btn_con{width:70%;}
+	
+		.upload_btn{width:95%;}
+		
+		.row{padding:10px;}
+
+		.pro_c33 i{display:none;}
+	
+	    .newpage{padding:0px;}
+	
+	    
+      /*news 最新消息*/
+
+        .news{width:100%;padding:0px;margin:15px auto;word-wrap:break-word;font-size:0.9em;overflow:hidden;}
+       
+        .news>h2{font-weight:500;color:#db5009;margin-bottom:10px;}
+        
+        .news  ul li:before{content:"";padding-right:5px;}
+        
+        .news  ul li:nth-child(odd) {padding:10px 5px;background:#efefef;border-bottom:1px solid rgba(0,0,0,0.05)}
+        
+        .news  ul li:nth-child(even) {padding:10px 5px;background:#f5f5f5;border-bottom:1px solid rgba(0,0,0,0.05)}
+        
+        .news  ul li span{padding-right:5px;color:#333;}
+        
+        .news  ul li span:after{content:"|";padding-left:5px;}
+       
+	  /*服務條款 備註 說明事項 皆可以用此項目*/
+
+	    .notice_page{width:100%;padding:5px;margin-bottom:25px;}
+
+	    .notice_page h3{margin:10px 0px;font-weight:bold;color:#db5009;border-left:4px solid #db5009;padding-left:5px;}
+
+	    .notice_page ol{padding:2px 5px;}
+
+	    .notice_page ol ol{padding:2px 5px;}
+
+	    .notice_page ol li{line-height:1.8;}
+	
+	
+	 /* table表格定義*/
+    .table_con{overflow:auto;padding:5px;}
+
+    .table_con>h2:before{content:"•";padding-right:5px;}
+   
+    .table_style{width:450px;margin:20px auto;border-collapse:collapse;}
+
+	.table_style th{background:#b3b3b3;color:#fff;border:1px solid rgba(232,232,232,1);padding:10px;}
+
+	.table_style td{background:#fff;border:1px solid rgba(232,232,232,1);padding:10px;text-align: center;}
+	
+	
+	
+        
+
+	/* bootstrap banner 修正*/
+	
+	#pc_banner{display:none;}
+    #mobile_banner{display:block;}
+
+
+}
+
+  @media screen and (max-width:481px)
+  {
+
+	  /**/
+	  .product>.activity_4col>div>h3{font-size: 14px;}
+			/**************************/
+		/*活動標籤*/
+		/**************************/
+	.product .promo_block >span{text-align: center;height: 23px;line-height: 1.25rem;font-size: 0.75rem;}
+	.points:before {background-size: 15px 15px;width: 18px;}
+	.money:before {background-size: 30px 15px;width: 32px;}
+	.product>.activity_4col>div img.red_green_block{height: 23px;}
+	 .product>.activity_4col>div>p{font-size: 20px;}
+ 
+	  /* 修正加入會員表單標題文字偏上----拉回比例 */ 
+	  .form_sub_tit span{font-size:1.1em;}
+	  
+	  
+	
+	
+	  
+	  /* 我已同意上述服務條款的按鈕居中控制*/
+	  .agreen_area{font-size:1.4em;line-height:1.6}
+	  
+	  /* 加入會員強調*/
+	  .addmenber_btn,.login_btn{font-size:1.4em;}
+	  
+	  
+	 
+	  
+	  
+	  .data_panel a{width:96%;display:block;margin:5px auto;text-align:center;}
+	  
+	  
+	  
+	    .login_btn{position:absolute;width:70px;text-align:center;color:#fff;background:#c9c9c9;top:0px;right:70px;height:100%;line-height:60px;transition:0.25s linear;font-size:1em;font-weight:bold;cursor:pointer;}
+	  
+	    .addmenber_btn{position:absolute;width:70px;text-align:center;color:#fff;background:#Db5009;top:0px;right:0px;height:100%;line-height:60px;transition:0.25s linear;font-size:1em;font-weight:bold;cursor:pointer;}
+	  
+	  
+	  /* step_process2 程序表用於一般頁面 padding減少*/
+		.step_process2 ul li{padding:10px 2px;font-size:0.85em;}
+	  
+	  .hint{font-size:1.1em;letter-spacing:-0.1px;}
+	
+	  
+	  
+	}

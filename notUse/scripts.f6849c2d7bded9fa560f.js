@@ -1,1 +1,0 @@
-_jqjsp=function(t){localStorage.setItem("cIP",t.ip)};

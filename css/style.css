@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+     /*processs state 填寫表單進度表樣式設定*/   
+     /*--------------------------------------------------------------------------------------------------------*/
+     
+  
+	.m_box{width:85%;margin:0px auto;}
+    
+    .m_box img{display:none}
+
+	.msg_box{width:85%;box-sizing:border-box;color:#666;margin:0px auto;}
+
+    .fr{float:right;}
+
+    /*--------------------------------------------------------------------------------------------------------*/
+
+ 
+    /* 表格form container*/ 
+    /*--------------------------------------------------------------------------------------------------------*/
+	.form_con{padding:25px;box-sizing:border-box;width:1100px;background:#ffffff;box-shadow:0px 0px 15px rgba(0,0,0,0.1);margin:25px auto;}
+
+    .form_tit span{background:#db5009;display:inline-block;height:100%;padding:5px 15px;margin-right:5px;}
+
+    .form_tit i{color:#fff;font-size:1.2em;}
+
+	.form_tit{font-size:1.3em;color:#db5009;background:#ffffff;padding:0px;line-height:48px;width:1100px;margin:35px auto;font-weight:bold;box-shadow: 0px 0px 10px rgba(0,0,0,0.1);}
+
+    .form_sub_tit span{vertical-align:top;}
+
+	.form_sec{border:1px solid rgba(0,0,0,0.1);margin:25px 0px;background:#f9f9f9;}
+
+	.form_sub_tit{padding:10px 15px;color:#fff;font-weight:400;font-size:1.1em;background:#414141;}
+	
+    .line_style{width:100%;border-top:1px solid rgba(0,0,0,0.1)}
+	
+    .form_content{color:#464646;display:inline-block;width:100%;;box-sizing: border-box;}
+
+    .form_content>article>h2{font-size:2.4em;text-align:center;margin:10px;font-weight:bold;color:#Db5009;}
+
+
+     .form_content>article{padding:25px;}
+
+    /*表單版位比例分配*/
+	.form_c33{width:33.33333%;float:left;box-sizing: border-box;padding:10px;}
+
+    .form_c25{width:24%;float:left;box-sizing: border-box;padding:10px;text-align:center;}
+
+    .form_c25s{width:24%;float:left;box-sizing: border-box;padding:10px;text-align:center;}
+	    
+    .div_th{width:100%;box-sizing:border-box;color:#3d3d3d;font-weight:bold;font-size:1.1em;}
+
+	.div_tr{padding:15px 0px;width: 100%;clear: both;border-top: 1px solid rgba(0,0,0,0.1);transition:0.25s ease-in-out;}
+
+	.mid_border{border-left:1px solid rgba(0,0,0,0.1);border-right:1px solid rgba(0,0,0,0.1);}
+	
+    .float_right{float:right;}
+
+    .row{width:100%;clear:both;border-top:1px solid rgba(0,0,0,0.1);padding:15px;box-sizing: border-box;overflow:auto;}
+	
+    .form_c50,.form_c50s{width:50%;float:left;box-sizing: border-box;padding:10px ;}
+    
+    .pro_c33{width:33.33%;float:left;text-align:center;font-size:1.1em;letter-spacing: 1px;line-height:24px;color:#333;margin-top:5px;}
+
+    .pro_c33 span{vertical-align: top;display:inline-block;}
+
+    .form_c50>lable>p{color:#999999;font-size:1em;line-height:1.5;}
+
+    .form_c25{width:24%;float:left;box-sizing: border-box;padding:10px 0px;}
+      
+    .mid{border-left:1px solid rgba(0,0,0,0.1);border-right:1px solid rgba(0,0,0,0.1);width:32%;}
+
+    .hint{color:#db5009;font-size:1.4em;margin:15px 0px;}
+
+	.infor-bar{margin:10px auto;padding:8px;border:1px solid rgba(0,0,0,0.1);font-size:1.1em;color:#db5009;}
+
+
+   /* 表格form 按鈕*/ 
+   /*--------------------------------------------------------------------------------------------------------*/
+
+	.upload_btn{background:#fff;font-size:1.2em;padding:15px 0px;width:25%;display:block;text-align:center;margin:10px auto;cursor:pointer;color:#db5009;font-weight:600;border:1px solid rgba(0,0,0,0.2);transition:0.25s ease-in-out;}
+	
+	.upload_btn:hover{background:#db5009;color:#Ffffff;transition:0.25s ease-in-out;}
+
+	.list_btn_con{text-align:center;margin:30px auto;width:30%;}
+
+    .notice_btn{margin:10px auto;border:1px solid rgba(0,0,0,0.2);display:block;text-align: center;text-decoration:none;padding:10px 0px;font-size:1.2em;font-weight:bold;transition:0.25s ease-in-out;cursor:pointer;}
+	
+    .notice_btn:hover{background:#db5009;color:#ffffff;border:1px solid rgba(0,0,0,0.0);}
+
+	.msg_box .material-icons{font-size:1.6em;display:inline-block;}
+
+   /*--------------------------------------------------------------------------------------------------------*/
+
+	
+  /* 表單文字格式及標題定義 */
+  /*--------------------------------------------------------------------------------------------------------*/
+	.form_text{padding-left:30px;margin-bottom:5px;display:block}
+
+	.form_text2{padding-left:10px;margin-bottom:5px;display:block}
+
+    .form_text3{padding-left:15px;margin-bottom:5px;display:block;text-align:left;}
+
+    .blc{height:382px;border:1px solid rgba(0,0,0,0.2);clear:both;}
+	
+	.bg_white{background:#f8f8f8;}
+
+	.bg_white1{background:#ffffff;}
+
+	.color_orange{color:#db5009;}
+
+	.color_gray{color:#333333;}
+     
+    .active{color:#fff;font-weight:bold;background:#333}
+
+	.c50{width:50%;float:left;box-sizing: border-box;}
+  
+    .c50_img{border:13px solid #fff;box-sizing:border-box;box-shadow:0px 0px 15px rgba(0,0,0,0.2);margin-top:-10px;display:inline-block;margin-left:-1px;}
+
+	.tit{width:100%;height:60px;background:#ffffff;box-sizing: border-box;color:#db5009;line-height:60px;padding-left:10px;font-size:1.4em;border-left:6px solid #db5009;}
+
+  /*--------------------------------------------------------------------------------------------------------*/
+
+
+
+.comment_txt{padding-left:5%;color:#9b8973;}
+
+.comment2_txt{font-size:1.2em;color:#333;margin:10px 0px;}

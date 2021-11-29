@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+input[type="text"],input[type="password"],input[type="email"],input[type="tel"],input[type="date"],select{width:100%;padding:2px;margin:15px auto;display:block;border:1px solid rgba(0,0,0,0.2);transition:0.5s ease-in-out;margin-bottom:5px;font-size:1em;box-sizing: border-box;height:41px;outline:none;background:#fff;}
+	
+
+	input::placeholder{color:#333;text-transform: uppercase;}
+	
+
+     input[type="tel"]:focus{width:98%;background:#db5009;border-radius:25px;outline:none;color:#ffffff;}
+	
+	 input[type="email"]:focus{width:98%;background:#db5009;border-radius:25px;outline:none;color:#ffffff;}
+
+	input[type="text"]:focus{width:98%;background:#db5009;border-radius:25px;outline:none;color:#ffffff;}
+	
+	input[type="password"]:focus{width:98%;background:#db5009;color:#fff;outline:none;border-radius:25px;}
+	
+
+
+	select:focus{transition:0.65s;box-shadow:0px 0px 8px rgba(0,0,0,0.2);border:6px solid rgba(255,255,255,0.8);}
+
+
+
+
+	.btn_set{padding:10px;background:#db5009;text-decoration:none;width:45%;
+	 font-weight:bold;display:inline-block;border:1px solid rgba(0,0,0,0.2);margin:5px;color:#fff;
+    transition:0.35s ease-in-out;box-sizing: border-box;
+    }
+
+
+
+.btn_set:hover{background:#333;color:#fff;width:43%;border:1px solid rgba(0,0,0,0);}
+
+
+.btn_2{padding:15px;background:#db5009;color:#fff;font-weight:bold;}
+
+
+
+textarea {width:98%;padding:10px;margin:10px auto;display:block;border:1px solid #d2d2d2;height:300px;font-size:1em:}
+
+textarea:focus{outline:none;border:1px solid #db5009;transition:0.25s ease-in-out;}
+
+
+/* radio buttom 定義*/
+
+.radio_box{display:block;margin:10px auto;padding:5px;width:35px;height:35px;}
+
+.radio_con {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+	background:#fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+}
+
+/* Hide the browser's default radio button */
+.radio_con input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark_radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+	border:1px solid rgba(0,0,0,0.1)
+}
+
+
+
+/* When the radio button is checked, add a blue background */
+.radio_con input:checked ~ .checkmark_radio {
+    background-color: #db5009;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark_radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio_con input:checked ~ .checkmark_radio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio_con .checkmark_radio:after {
+ 	top: 8px;
+	left: 8px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
