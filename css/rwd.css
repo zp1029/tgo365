@@ -316,7 +316,7 @@
 		
 		.downpoint{vertical-align:sub;width:22px;height:26px;border:none;display:inline-block} 
 		
-		 .product h5{font-size:1em;}
+		 .product h5{font-size:20px;}
 		 
 		 .product_item>div{float:none;width:100%;text-align:center;}
 		 
@@ -332,7 +332,7 @@
 		 
 		 .product_item>article{float:none;width:100%;padding:10px;}
 		 
-		 .product_item>article>h4{color:#Db5509;font-size:1.2em;font-weight:300;}
+		 .product_item>article>h4{color:#000;font-size:20px;}
 		 
 		 .product_item>article>p{font-size:0.9em;}
 		 
@@ -561,15 +561,15 @@
 			/**************************/
 		/*活動標籤*/
 		/**************************/
-	.product .promo_block >span{text-align: center;height: 23px;line-height: 1.25rem;font-size: 0.75rem;}
+	.product .promo_block >span{text-align: center;height: 23px;line-height: 1.25rem;font-size: 12px;}
 	.points:before {background-size: 15px 15px;width: 18px;}
 	.money:before {background-size: 30px 15px;width: 32px;}
 	.product>.activity_4col>div img.red_green_block{height: 23px;}
 	 .product>.activity_4col>div>p{font-size: 20px;}
- 
+	  .product h5{font-size:16px;}
 	  /* 修正加入會員表單標題文字偏上----拉回比例 */ 
 	  .form_sub_tit span{font-size:1.1em;}
-	  
+	  .points span{font-size: 13px;}
 	  
 	
 	
