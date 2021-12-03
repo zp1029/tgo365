@@ -586,9 +586,6 @@ x
       .product_list div span a:hover{background:#db5009;transition:0.25s ease-out;}
 
 
-
-
-
       /* 推薦產品 product */
 
       .product{overflow:auto;-webkit-overflow-scrolling:touch;}
@@ -615,22 +612,22 @@ x
       /* 商品名稱 */ 
       .product>.activity_4col>div>h3{font-weight:400;margin-top:5px;text-align:left;font-size:16px;color: #5a5a5a;margin-bottom: 0px;}
 
-      .product>.activity_4col>div>p{text-align:left;width:98%;overflow:auto;margin-bottom:0px;}
+      .product>.activity_4col>div>p{text-align:left;width:98%;overflow:auto;margin-bottom:0px;line-height: 1.2;padding-top: 5px;}
 
-      .product div {width:100%;margin:15px auto;text-align: center;padding:15px;}
+      .product div {width:100%;margin:0px auto;text-align: center;padding:15px;}
 
       .product div span a{padding:10px 15px;color:#fff;background:#333;transition:0.25s ease-out;margin:0px 5px;text-decoration:none;}
 
       .product div span a:hover{background:#db5009;transition:0.25s ease-out;}
 
-
       .product h4{text-align:left;color:#959595;font-size:16px;}
 
-      .product h5{text-align:right;font-size:22px;font-weight:400;letter-spacing: 1px;line-height: 1rem;margin-top: 5px;}
+      .product h5{text-align:left;font-size:22px;font-weight:400;line-height: 1rem;}
+
 /*--------------------------------------------------------------------------------------------------------*/
           /*兌換點數＋金額*/
-        .points{color:#333;font-size: 22px;line-height: 18px;padding: 5px 0px;}
-		.points span{
+        .points, .money{color:#333;font-size: 22px;line-height: 18px;padding: 5px 0px;}
+		.points span, .money span{
 			color: #333;
 			font-size:14px;
 			padding-left: 3px;
@@ -661,12 +658,13 @@ x
 			font-size: 1.125rem;
 			padding: 0px 2px; 
 		}
-		.oldPoint{padding-left: 8px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;}
+		.oldPoint{padding-left: 8px!important;color:#b7b5b5!important;word-break: keep-all;display: inline-flex;text-decoration: line-through;font-size: 14px;}
 
 /*--------------------------------------------------------------------------------------------------------*/
 		/*好咖相伴-優惠方案*/
-		.product .promo_block, .product_item>article>div.promo_block {margin: 0px;padding: 0px;display: flex;font-size:13px;justify-items: flex-start;flex-wrap: wrap;
+		.product .promo_block, .product_item>article>div.promo_block {margin-bottom: 20px;padding: 0px;display: flex;font-size:13px;justify-items: flex-start;flex-wrap: wrap;
 			align-content: stretch;width: calc(100% + 10px);line-height: 24px;}
+		
 		.product>.activity_4col>div img.red_green_block, .product_item>article>div img.red_green_block{
 			width:auto;height: 26px;margin:0px 4px 4px 0px;border:0px solid #FFFFFF ;flex: none;
 		}
@@ -738,9 +736,6 @@ x
 
          .product_item>article>p.product_num{color:#999;font-size: 14px;}
 
-         .product_descTitle{margin: 20px 0px 10px 0px;}
-		 .product_descTitle>span{border-bottom: 1px solid #333;font-weight: 500;}
-
 		 .product_item>div{float:left;width:40%;}
 		 
 		 
@@ -756,7 +751,7 @@ x
 		 .product_item>article{float:left;width:50%;padding:10px;}
 
 		 
-		 .product_item>article>h2{font-size: 16px;color:#333;margin: 5px 0px;font-weight: 400;}	
+		 .product_item>article>h2{font-size: 18px;color:#333;margin: 5px 0px;font-weight: 400;}	
 
 		 .product_item>article>h4{
 				font-size: 25px;
@@ -766,8 +761,12 @@ x
 				font-weight: 400;
 			    color: #000;
 			}
+
+.product_item>article>h4>span.money.detail {
+    font-size: 25px;
+}
 		 .product_item span.unit{font-size: 16px;margin: 0px 3px;}
- 
+
 		 .product_item>article>p{font-size:1rem;}
 		 
 		 .product_item>article>div{text-align:right}
