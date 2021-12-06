@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+<head>
+<title>高鐵會員TGo兌換點數</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+<!-- google icon -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/checkbox.css" rel="stylesheet" />
+<link href="css/id.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" >
+<link href="css/rwd.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+   <!--modal--window   start--> 
+  	<div class="modal_pop">
+ 	   
+  	   
+	   <!-- modal head-->  	
+	   <div class="modal_head" >
+
+	     	<p class="modal_tit" > this is a test</p>
+		
+		  <p class="modal_cls_btn" onclick="cls_the_pop()"><i class="material-icons">close</i></p>
+		   
+	   </div>	
+	   
+	   
+	   
+	  <!-- modal content-->   
+	    <div  class="modal_content" >
+		  
+		    <p> </p>
+		  
+		</div>
+		
+		
+		
+	  <!-- modal footer-->  
+	  
+	  
+	  <div class="modal_footer">
+	  
+		  <p onclick="cls_the_pop()">取消</p>
+	  
+		</div>
+
+	 </div>
+	 
+  	<div class="mask"></div> 
+	
+    <!--modal--window   end-->
+    
+   
+    <!--mobile menu-->
+   <div class="m_menu">
+	   <div class="cross_btn"><span></span></div>
+	   <ol>
+		    
+		    <li><a href="my.html">品牌總覽</a></li> 
+		    <li><a href="ticket.html">TGo票卷夾</a></li>
+			<li><a href="act.html">活動快訊</a></li>
+			<li><a href="qa.html">常見問題</a></li>		
+		    <li><a href="buy.html">購物車</a></li>
+		    <li><a href="https://tgo.thsrc.com.tw/index.html" target="_blank">返回會員網站</a></li>
+	   </ol>
+	   
+	</div>
+  
+   <!-- header design-->
+	<header>
+		<div class="logo"><a href="index.html"><img src="https://tgopoints.thsrc.com.tw/assets/images/365website_Logo.jpg"></a></div>
+		
+		<nav>
+		<ul>  
+		    <li><a href="my.html">品牌總覽</a></li> 
+		
+			<li><a href="act.html">活動快訊</a></li>
+			<li><a href="qa.html">常見問題</a></li>	
+		  
+		    <li class="home_btn"><a href="https://tgo.thsrc.com.tw/index.html" >登入</a></li>
+
+		</ul>
+		</nav>
+		
+		<div class="mobile_btn"><span></span></div>
+	</header>
+     
+      
+    <script>
+	  
+	  $(document).ready(function(){
+		  
+		 
+		  $(".mobile_btn").click(function(){
+			  
+			 $(".m_menu").slideDown(450,function(){
+				 
+				// alert("finish")
+			 })
+		  })
+		  
+		  
+		  $(".cross_btn").click(function(){
+			  
+			  
+			  $(".m_menu").slideUp(450,function(){
+				  
+				//  alert("up")
+			  })
+		  })
+		  
+		  
+	  })
+	</script>
+
+
+    <div class="con_sub" style="display:none;">
+     
+        <div class="col50" id="x1">
+		 <p class="intro">hi young 你好!<span class="point">目前剩餘點數0000000</span></p>
+		 </div>
+       
+       
+        <div class="col50" style="text-align:right" id="x2">
+         
+         <input type="text" class="serach"  placeholder="熱門關鍵字搜尋:星巴克...." >
+         <button type="button" class="sent">送出</button>
+      	</div>
+      	
+      	
+      	
+      </div>
+      
+   
+      
+      
+       
+    <!--分類清單-->
+    <div class="con_sub" >
+     <div style="overflow:auto;">
+     <ul class="sub_menu">
+       
+		<li><a href="a1.html">星巴克</a></li>
+		<li><a href="a1.html">旅遊交通</a></li>
+		<li><a href="a1.html">便利生活</a></li>
+		<li><a href="a1.html">美食餐廳</a></li>
+		<li><a href="a1.html">點心伴手禮</a></li>
+
+	</ul>
+	</div>
+	</div>
+  
+       
+    <!--bootstrap banner pc版-->	
+    <div class="con_banner" id="pc_banner">
+  
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <a href="#" target="_blank"> <img src="https://tgopoints.thsrc.com.tw/images/product/20210602094331713.jpeg?q=10727" width="100%"></a>
+    </div>
+    <div class="carousel-item">
+        <a href="#" target="_blank">  <img src="https://tgopoints.thsrc.com.tw/images/product/20201102120621202.jpeg?q=164230" width="100%"></a>
+    </div>
+  
+  </div>
+</div>
+	</div>
+   
+   
+    <!--bootstrap banner mobile版-->	 
+    <div class="con_banner" id="mobile_banner">
+  
+  <div id="mobile_demo" class="carousel slide" data-ride="carousel">
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#" target="_blank">  <img src="img/m1.jpg" ></a>
+    </div>
+    <div class="carousel-item">
+         <a href="#" target="_blank">   <img src="img/m2.jpg" ></a>
+    </div>
+    <div class="carousel-item">
+		<a href="#" target="_blank">    <img src="img/m3.jpg" ></a>
+    </div>
+  </div>
+</div>
+	</div>
+    
+     <!--main con-->
+     <div class="con">
+      
+     <!--精選活動 adjust-->
+      <div class="activity" > 
+      <h2>熱門活動 </h2>	
+		  <div>
+			  <a href="https://tgopoints.thsrc.com.tw/productlist/10?cat1=4" target="_blank">
+				  <img src="https://tgopoints.thsrc.com.tw/images/product/20210513100505516.jpeg?q=10525"></a>
+		    <p>星巴克週一好星情</p>
+		  </div>
+		  
+		  
+	
+     
+     </div>
+     
+         <div class="activity" > 
+      <h2> </h2>	
+		  <div>
+			  <a href="https://tgopoints.thsrc.com.tw/productlist/84?cat1=5" target="_blank">
+				  <img src="https://tgopoints.thsrc.com.tw/images/product/20201230045509881.jpeg?q=145843"></a>
+		    <p>高鐵聯名商品熱賣中</p>
+		  </div>
+		  
+		  
+	
+     
+     </div>
+     
+     
+     
+    
+
+     
+     <!--商品專區-->
+      <div class="product">
+      <div class="activity_4col">
+			 <h2>推薦商品<i class="material-icons" >play_circle_filled</i></h2>
+			 
+			  <div>
+			   <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/81b5afa8-ecc9-44f0-a54f-a65bfeed79bd" target="_blank"> <img src="img/TGo365商品圖比例圖_400_1.jpg"></a>
+				  <h3>哈根達斯 冰淇淋迷你杯(外帶)</h3>
+				  <p class="money">650<span>點</span><span class="plus">+</span>1000<span>元</span><span class="oldPoint">800點+1100元</span>
+				  </p> <div class="promo_block"><img src="img/coffee.png" class="red_green_block"><span>熱銷商品</span></div>
+		      </div>
+		      
+		      
+		       <div>
+		       
+			      <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/25fd3faf-20f0-42db-8bb4-d1c3c4bd9a5e" target="_blank">
+			       
+			         <span class="">
+			             <img src="img/TGo365商品圖比例圖_450_2.jpg">
+					 </span>
+			      </a>
+				   
+				<h3>星野 生鮮銅鑼燒(3入)</h3>
+				  <p class="money">595<span>點</span><span class="plus">+</span>500<span>元</span></p>
+		      
+		       </div>
+		      
+		        <div>
+			  
+			    <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank">
+			     
+		          <span class="">
+			        <img src="img/TGo365商品圖比例圖_450_1.jpg">
+			      </span> 
+			   </a>
+					
+	          
+	         <h3>梁社漢 厚切香酥排骨飯饗樂套餐</h3>
+				  <p class="points">875<span>點</span></p>
+					<div class="promo_block"><img src="img/gift.png" class="red_green_block"><span>本月新品推薦</span><span>熱銷排行商品</span></div>
+					
+	          
+	          
+		      </div>
+		      
+		      
+		       <div>
+			    <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank">
+			     
+		          <span class="">
+			        <img src="img/TGo365商品圖比例圖_400_2.jpg">
+			      </span> 
+			   </a>
+				
+			        
+	         <h3>路易莎咖啡 100%一番抹茶鮮奶茶（Ｍ／L）</h3>
+				  <p class="points">340<span class="unit">點</span></p>
+		      </div>
+
+	
+			  <div>
+			    <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank">
+			     
+		          <span class="new">
+			        <img src="img/TGo365商品圖比例圖_450_1.jpg">
+			      </span> 
+			   </a>
+				  
+				  <h3>漢堡王 小華堡經典套餐</h3>
+			    <p class="money">575<span>點</span><span class="plus">+</span>10<span>元</span><span class="oldPoint">165點+20元</span></p>
+      </div>
+		      
+		      
+		       <div>
+		       
+			      <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/25fd3faf-20f0-42db-8bb4-d1c3c4bd9a5e" target="_blank">
+			       
+			         <span class="">
+			             <img src="img/TGo365商品圖比例圖_400_2.jpg">
+					 </span>
+			      </a>
+				  <h3>爭鮮餐飲(通用) 100元抵用券</h3>
+			    <p class="points">600<span class="unit">點</span></p>
+		      
+      </div>
+		      
+		        <div>
+			  
+			    <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank">
+			     
+		          <span class="">
+			        <img src="img/TGo365商品圖比例圖_400_1.jpg">
+			      </span> 
+
+			   </a>
+					
+	          
+	           <h3>玉珍齋 老老粩（18入／1袋）</h3>
+			    <p class="points">1000<span class="unit">點</span></p>
+	          
+	          
+      </div>
+		      
+		      
+		       <div>
+			   <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank"><img src="img/TGo365商品圖比例圖_400_2.jpg"></a>
+				
+			       <h3>舊振南 8兩漢餅（口味任選）</h3>
+			    <p class="points">1025<span class="unit">點</span></p>
+      </div>
+		      
+	    </div>
+		 
+	</div>
+     
+   
+     
+           
+      
+      
+     <!--精選活動推薦 -->
+     <div  class="recommand" >
+     
+      <div class="activity_3col">
+			 <h2>開啟美好<i class="material-icons" >play_circle_filled</i></h2>
+			 
+			  <div>
+			   <a href="https://tgopoints.thsrc.com.tw/Activity/38" target="_blank"><img src="https://tgopoints.thsrc.com.tw/images/product/20201021040044709.jpeg?q=164514"></a>
+			   <h3>嚴選店家優惠</h3>
+		      </div>
+		      
+		      
+		       <div>
+			   <a href="https://tgopoints.thsrc.com.tw/exchange" target="_blank"><img src="https://tgopoints.thsrc.com.tw/images/product/20201021035543738.jpeg?q=155616"></a>
+			   <h3>ibon取票加碼贈</h3>
+		      </div>
+		      
+		        <div>
+			   <a href="https://tgo.thsrc.com.tw/member.html"  target="_blank"><img src="https://tgopoints.thsrc.com.tw/images/product/20201021035356030.png?q=155622"></a>
+			   <h3>萬國通路獨家活動</h3>
+		      </div>
+		      
+		      
+		 </div> 
+       </div>
+     
+     
+     
+     <!--最新消息-->
+     <div class="news">
+		 <h2>最新消息</h2>	
+          <ul>
+			  <li><span>2021-06-29</span><a href="https://tgopoints.thsrc.com.tw/Activity/70">點數365 網站停機公告</a></li>
+			  
+			  
+			  <li><span>2020-11-01</span><a href="http://www.thsrc.com.tw/tw/News/Detail/49180f25-492d-4b4c-9ed8-4960f3d235f6/2" target="_blank" >高鐵站嚴選好商店</a></li>
+			  
+			  
+			 
+			 
+		  </ul>
+       
+         <div class="page_number" style="display:none;">
+             <a href="#">❮</a>
+			 <a href="#">1</a>
+			 <a href="#">2</a>
+			 <a href="#">3</a>
+			 <a href="#">❯</a>
+		 </div>
+     </div>  
+
+      
+      
+     
+
+
+	 </div>
+	
+      <!--footer-->
+       <footer> 
+          
+		   
+    
+     <p>台灣高速鐵路股份有限公司 版權所有 © Taiwan High Speed Rail Corporation. All Rights Reserved</p> 
+     
+         
+   </footer>
+
+
+
+</body>
+</html>
+
+
+       <script>
+		   
+ // pop define the window content!
+		   
+  $("#ok_btn").click(function()
+ {
+	  $(".modal_pop").slideDown(450);
+	  
+	  $(".mask").fadeIn(450);
+	  
+	  $(".modal_pop .modal_tit").html(("標題填寫"))  
+	  
+	  $(".modal_pop .modal_content p").html(("如信箱正確，請進行認證信重發。<br/>如信箱有誤，請重新註冊。"))  
+	  
+	  
+	 
+	// home=true;
+ })	 
+  
+  
+ 
+  
+  
+  
+    function cls_the_pop()
+		   
+	{
+	  $(".modal_pop").fadeOut(250);
+	  $(".mask").fadeOut(500);
+	}
+  
+		   
+</script>
+       
+  
+
+       
