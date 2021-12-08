@@ -559,6 +559,7 @@
   {
 
 	  /**/
+	  .product>.activity_4col>div{padding: 1px;}
 	  .product>.activity_4col>div>h3{font-size: 14px;}
 			/**************************/
 		/*活動標籤*/
@@ -572,6 +573,7 @@
 	.money:before {background-size: 30px 15px;width: 32px;}
 	  
 	  .points, .money{font-size: 20px;}
+	  
 	.product>.activity_4col>div img.red_green_block{height: 23px;}
 	  
 	 .product>.activity_4col>div>p{}
