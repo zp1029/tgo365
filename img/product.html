@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<title>高鐵會員TGo</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/checkbox.css" rel="stylesheet" />
+<link href="css/id.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" >
+<link href="css/rwd.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+   <!--modal--window   start--> 
+  	<div class="modal_pop">
+ 	   
+  	   
+	   <!-- modal head-->  	
+	   <div class="modal_head" >
+
+	     	<p class="modal_tit" > this is a test</p>
+		
+		  <p class="modal_cls_btn" onclick="cls_the_pop()"><i class="material-icons">close</i></p>
+		   
+		
+		   
+	   </div>	
+	   
+	   
+	   
+	  <!-- modal content-->   
+	    <div  class="modal_content" >
+		  
+		    <p> </p>
+		 	  
+		</div>
+		
+		
+		
+	  <!-- modal footer-->  
+	  
+	  
+	  <div class="modal_footer">
+	  
+		  <p onclick="cls_the_pop()">確認</p>
+	  
+		</div>
+
+	 </div>
+	 
+  	<div class="mask"></div> 
+	
+    <!--modal--window   end-->
+    
+   
+    <!--mobile menu-->
+   <div class="m_menu">
+	   <div class="cross_btn"><span></span></div>
+	   <ol>
+		    
+		    <li><a href="my.html">品牌總覽</a></li> 
+		    <li><a href="ticket.html">TGo票卷夾</a></li>
+			<li><a href="act.html">活動快訊</a></li>
+			<li><a href="qa.html">常見問題</a></li>		
+		    <li><a href="buy.html">購物車</a></li>
+		    <li><a href="https://tgo.thsrc.com.tw/index.html" target="_blank">返回會員網站</a></li>
+	   </ol>
+	   
+	</div>
+  
+   <!-- header design-->
+	<header>
+		<div class="logo"><a href="index.html"><img src="logo.svg"></a></div>
+		
+		<nav>
+		<ul>  
+		    <li><a href="my.html">品牌總覽</a></li> 
+		    <li><a href="ticket.html">TGo票卷夾</a></li>
+			<li><a href="act.html">活動快訊</a></li>
+			<li><a href="qa.html">常見問題</a></li>	
+		    <li class="buy_btn"><a href="buy.html" >購物車</a></li>
+		    <li class="home_btn"><a href="https://tgo.thsrc.com.tw/index.html" >返回會員網站</a></li>
+
+		</ul>
+		</nav>
+		
+		<div class="mobile_btn"><span></span></div>
+	</header>
+     
+     
+    <script>
+	  
+	  $(document).ready(function(){
+		  
+		 
+		  $(".mobile_btn").click(function(){
+			  
+			 $(".m_menu").slideDown(450,function(){
+				 
+				// alert("finish")
+			 })
+		  })
+		  
+		  
+		  $(".cross_btn").click(function(){
+			  
+			  
+			  $(".m_menu").slideUp(450,function(){
+				  
+				//  alert("up")
+			  })
+		  })
+		  
+		  
+	  })
+	</script>
+
+
+     <div class="con_sub" >
+     
+        <div class="col50" id="x1">
+		 <p class="intro">hi young 你好!<span class="point">目前剩餘點數0000000</span></p>
+		 </div>
+       
+       
+        <div class="col50" style="text-align:right" id="x2">
+         
+         <input type="text" class="serach"  placeholder="請輸入..." >
+         <button type="button" class="sent">送出</button>
+      	</div>
+      	
+      	
+      	
+      </div>
+      
+
+    <!--分類清單-->
+    <div class="con_sub" >
+     <div style="overflow:auto;">
+     <ul class="sub_menu">
+       
+		<li><a href="a1.html">分類1</a></li>
+		<li><a href="a1.html">分類2</a></li>
+		<li><a href="a1.html">分類3</a></li>
+		<li><a href="a1.html">分類4</a></li>
+		<li><a href="a1.html">分類5</a></li>
+		<li><a href="a1.html">分類6</a></li>
+		<li><a href="a1.html">分類7</a></li>
+		<li><a href="my.html">所有店家</a></li>
+		
+   
+	</ul>
+	</div>
+     
+     	</div>
+  
+
+    
+     
+
+     <!--main con-->
+     <div class="con">
+		 <div class="page_title">丸莊醬油商家產品</div>
+   
+          
+              <div class="product_item">
+				 
+			   <div>			    
+			       <img src="img/TGo365商品圖比例圖_400_7.jpg" class="main_product"> 	   
+			   </div>
+				  
+			  <article>
+			  <p class="product_num">商品編號：TR202101060027</p>  
+			  <h2>丸莊醬油 金典極品禮盒(油清*油膏)2入裝</h2>	
+			  <h4><span class="money detail">900<span class="unit">點+</span>100<span class="unit">元</span><span class="oldPoint">400點 + 100元</span></span></h4>
+				 <div class="promo_block"><img src="img/coffee.png" class="red_green_block"><span>熱銷排行商品</span><span>優惠週二限定</span></div>  	    
+			  
+			   <p><span>商品說明</span></p>
+			   <p>以台灣契作黑豆甕式天然發酵的手工醬油，更是台灣獨步全球傲人的特產。黑豆精華，盡在於此。由嚴選黑大豆淬湅，180天傳統古法釀造的丸莊螺光黑豆原汁蔭油，是丸莊百年來的堅持，金饌玉釀，渾然天成。兼顧美味與健康的新食關，正代表著丸莊食品汲古創新的努力。</p>
+			   
+			     <i class="fab fa-line" style="font-size:2.5em;color:#1bb91f;margin:10px;"></i>
+                 
+                  <i class="fab fa-facebook" style="font-size:2.5em;color:#3b579d;margin:10px;"></i>
+			   
+			   
+			   <div>
+			    
+			     
+			     <a href="#" class="btn_color" id="ok_btn">立即購買</a>
+			     
+			     <a href="#" class="btn_color" id="fav_btn">收藏商品</a>
+			     
+			      <a href="#" class="back">返回</a>
+			   </div>
+			   
+			   
+              
+            
+                  
+                 
+              </article>
+			  
+		      
+
+
+		      </div> 
+            
+             <!--推薦兌換-->    
+           <div class="product" >
+                 <div class="activity_4col">
+			       <h2>推薦兌換</h2>
+			 
+			  <div>
+			  
+			  
+			   <a href="product.html" target="_blank">
+			   
+			   <span class="">
+			  <img src="img/TGo365商品圖比例圖_450_6.jpg">
+			   </span>
+			   
+			   </a>
+			   
+				  <p>金典極品禮盒(油清*油膏)2入裝</p>
+				  <h5 class="points">900<span class="unit">點</span><span class="oldPoint">1000點</span></h5>
+				  <div class="promo_block"><img src="img/full.png" class="red_green_block"><span>熱銷排行商品</span></div>
+		      </div>
+		      
+		      
+		       <div>
+			   <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/25fd3faf-20f0-42db-8bb4-d1c3c4bd9a5e" target="_blank"><img src="img/TGo365商品圖比例圖_450_6.jpg"></a>
+			   
+				   <p>黑豆薄鹽醬油</p>
+				   <h5 class="points">665<span class="unit">點</span></h5><div class="promo_block"><img src="img/gift.png" class="red_green_block"><span>新品上市</span><span>週末限定</span></div>
+		      </div>
+		      
+		        <div>
+			   <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank">
+			   <span class="">
+			   <img src="img/TGo365商品圖比例圖_450_6.jpg">
+			   </span>
+			   
+			   </a>
+			   
+			        <!--< <h4>丸莊醬油 </h4>-->
+					<p>極品黑豆蔭油清</p> 
+	                <h5 class="points">65<span class="unit">點</span></h5>
+		      </div>
+		      
+		      
+		       <div>
+			   <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/dc4e766e-2230-42ef-a10b-18c0f7325fcc"  target="_blank"><img src="img/TGo365商品圖比例圖_450_6.jpg"></a>
+			   
+			        <!--<<h4>丸莊醬油 </h4>-->
+				   <p>黑豆竹級醬油</p>
+				  
+				  
+				  
+				   <h5 class="money">575<span class="unit">點 +</span>1000<span class="unit">元</span><span class="oldPoint">165點+1200元</span></h5>		      
+		      
+		 </div> 
+		 </div>
+        
+		 </div>
+            
+          
+		    
+     
+
+	 </div>     
+ 
+    
+          
+		    
+     
+
+
+	
+	   <!--footer-->
+       <footer> 
+           
+		   
+     
+     <p>台灣高速鐵路股份有限公司 版權所有© Taiwan High Speed Rail Corporation. All Rights Reserved</p> 
+     
+         
+   </footer>
+</body>
+</html>
+
+<script>
+		   
+ // pop define the window content!
+		   
+  $("#ok_btn").click(function()
+ {
+	  $(".modal_pop").slideDown(450);
+	  
+	  $(".mask").fadeIn(450);
+	  
+	  $(".modal_pop .modal_tit").html(("立即購買"))  
+	  
+	  $(".modal_pop .modal_content p").html(("確定購買此商品"))  
+
+ })	 
+  
+  
+  $("#fav_btn").click(function(){
+	  
+	  
+	  $(".modal_pop").slideDown(450);
+	  
+	  $(".mask").fadeIn(450);
+	  
+	   $(".modal_pop .modal_tit").html(("收藏商品"))  
+	  
+	  $(".modal_pop .modal_content p").html(("確定收藏此商品"))  
+
+	  
+	  
+  })
+  
+  
+  
+    function cls_the_pop()
+		   
+	{
+	  $(".modal_pop").fadeOut(250);
+	  $(".mask").fadeOut(500);
+	}
+  
+		   
+</script>
+
+       
