@@ -667,6 +667,11 @@ x
 		
 		.product>.activity_4col>div img.red_green_block, .product_item>article>div img.red_green_block{
 			width:auto;height: 26px;margin:0px 4px 4px 0px;border:0px solid #FFFFFF ;flex: none;
+			image-rendering:-moz-crisp-edges;          /* Firefox        */
+			image-rendering:-o-crisp-edges;            /* Opera          */
+			image-rendering:-webkit-optimize-contrast; /* Safari         */
+			image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+			-ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
 		}
 		.promo_block>span{
 			width:max-content;height:26px; padding: 0px 4px;color:#ee9920;border:1px solid #f2b672;margin:0px 4px 4px 0px;
